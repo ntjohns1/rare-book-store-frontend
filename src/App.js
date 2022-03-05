@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Homepage from './components/Homepage/Homepage';
 import AddCustomer from './components/Customer/AddCustomer';
+import AddBook from './components/Book/AddBook'
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/addCustomer" element={<AddCustomer />} />
-`      {/* <Route path="/addBook" element={<AddBook />} /> */}
+`      <Route path="/addBook" element={<AddBook />} />
 `      </Routes>
     </BrowserRouter>
   );

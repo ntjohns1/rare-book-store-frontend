@@ -78,7 +78,7 @@ export default function AddCustomer() {
     function goBack() {
         document.location.replace(`/`);
     }
-    
+
     return (
         <Container className='p-4 my-4'>
             <div className="content">
@@ -95,43 +95,17 @@ export default function AddCustomer() {
                                     <h5 className="title">{formState.firstName} {formState.lastName}</h5>
                                 </div>
                             </Card.Body>
-                            <Card.Footer>
-                                <hr />
-                                <div className="button-container">
-                                    <Row>
-                                        <Col className="ml-auto" lg="3" md="6" xs="6">
-                                            <h5>
-                                                12 <br />
-                                                <small>Files</small>
-                                            </h5>
-                                        </Col>
-                                        <Col className="ml-auto mr-auto" lg="4" md="6" xs="6">
-                                            <h5>
-                                                2GB <br />
-                                                <small>Used</small>
-                                            </h5>
-                                        </Col>
-                                        <Col className="mr-auto" lg="3">
-                                            <h5>
-                                                24,6$ <br />
-                                                <small>Spent</small>
-                                            </h5>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Card.Footer>
                         </Card>
-
                     </Col>
                     <Col md="8">
                         <Card className="card-user">
                             <Card.Header>
-                                <Card.Title tag="h5">Edit Profile</Card.Title>
+                                <Card.Title tag="h5">Add Customer</Card.Title>
                             </Card.Header>
                             <Card.Body>
                                 <Form onSubmit={handleFormSubmit}>
                                     <Row>
-                                        <Col className="px-1" md="3">
+                                        <Col className="px-1" md="6">
                                             <Form.Group>
                                                 <label>Username</label>
                                                 <Form.Control
@@ -142,7 +116,7 @@ export default function AddCustomer() {
                                                 />
                                             </Form.Group>
                                         </Col>
-                                        <Col className="pl-1" md="4">
+                                        <Col className="pl-1" md="6">
                                             <Form.Group>
                                                 <label htmlFor="exampleInputEmail1">
                                                     Email address
@@ -263,17 +237,17 @@ export default function AddCustomer() {
                                             </Form.Group>
                                         </Col>
                                     </Row>
-                                    <Row>
-                                        <div className="update ml-auto mr-auto py-4`">
+                                    <Row className='my-3'>
+                                        <div>
                                             <Button
-                                                className="btn-round"
+                                                className="btn-round mr-3"
                                                 color="primary"
                                                 type="submit"
                                             >
                                                 Add Customer
                                             </Button>
                                             <Button
-                                                className="btn-round"
+                                                className="btn-round mx-3"
                                                 color="primary"
                                                 onClick={() => goBack()}
                                             >
