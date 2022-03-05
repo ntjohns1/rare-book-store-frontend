@@ -8,7 +8,7 @@ export default function AddCustomer() {
         title: '',
         author: '',
         genre: '',
-        yearWritten: '',
+        yearPublished: '',
         edition: '',
         binding: '',
         condition: '',
@@ -36,7 +36,7 @@ export default function AddCustomer() {
             title,
             author,
             genre,
-            yearWritten,
+            yearPublished,
             edition,
             binding,
             condition,
@@ -58,7 +58,7 @@ export default function AddCustomer() {
             title,
             author,
             genre,
-            yearWritten,
+            yearPublished,
             edition,
             binding,
             condition,
@@ -125,8 +125,8 @@ export default function AddCustomer() {
                                             <Form.Group>
                                                 <label>Year Written</label>
                                                 <Form.Control
-                                                    name="yearWritten"
-                                                    value={formState.yearWritten}
+                                                    name="yearPublished"
+                                                    value={formState.yearPublished}
                                                     onChange={handleChange}
                                                     type="text"
                                                 />

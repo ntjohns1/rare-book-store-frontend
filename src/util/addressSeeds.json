@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "street1": "134 Green St.",
+        "street2": "Apt. 4",
+        "city": "Smithville",
+        "state": "TX",
+        "zipCode": "71890",
+        "phone": "210-908-7654"
+    },
+    {
+        "id": "2",
+        "street1": "7147 Waldruff Rd.",
+        "street2": "",
+        "city": "Huntington",
+        "state": "CT",
+        "zipCode": "20345",
+        "phone": "890-098-7654"
+    },
+    {
+        "id": "3",
+        "street1": "736 DUff St.",
+        "street2": "Apt. B",
+        "city": "Raleigh",
+        "state": "NC",
+        "zipCode": "27654",
+        "phone": "910-098-8976"
+    },
+    {
+        "id": "4",
+        "street1": "746 Hartt St.",
+        "street2": "",
+        "city": "Greenville",
+        "state": "SC",
+        "zipCode": "38767",
+        "phone": "789-096-9876"
+    },
+    {
+        "id": "5",
+        "street1": "435 Stephens St.",
+        "street2": "",
+        "city": "Arlington",
+        "state": "TX",
+        "zipCode": "98732",
+        "phone": "736-019-8376"
+    },
+    {
+        "id": "6",
+        "street1": "345 Main St.",
+        "street2": "",
+        "city": "Carmel",
+        "state": "IN",
+        "zipCode": "46987",
+        "phone": "317-098-0987"
+    },
+    {
+        "id": "7",
+        "street1": "324 James Ave.",
+        "street2": "Apt. 45",
+        "city": "Fargo",
+        "state": "ND",
+        "zipCode": "67543",
+        "phone": "234-498-7456"
+    },
+    {
+        "id": "8",
+        "street1": "9348 Willow Rd.",
+        "street2": "",
+        "city": "Miami",
+        "state": "FL",
+        "zipCode": "45678",
+        "phone": "789-234-5436"
+    }
+]

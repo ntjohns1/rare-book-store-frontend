@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "firstName": "Jason",
+        "lastName": "Michaels",
+        "username": "jMichaels",
+        "email": "jmiichaels@email.com",
+        "address": "1",
+        "rewardsLevel": "Gold"
+    },
+    {
+        "id": "2",
+        "firstName": "Sarah",
+        "lastName": "Stevens",
+        "username": "sStevens",
+        "email": "sstevens@email.com",
+        "address": "2",
+        "rewardsLevel": "Gold"
+    },
+    {
+        "id": "3",
+        "firstName": "Jeremy",
+        "lastName": "Jacobs",
+        "username": "jJacobs",
+        "email": "jjacobs@email.com",
+        "address": "3",
+        "rewardsLevel": "Silver"
+    },
+    {
+        "id": "4",
+        "firstName": "Martha",
+        "lastName": "Morris",
+        "username": "mmorris",
+        "email": "mMorris@email.com",
+        "address": "4",
+        "rewardsLevel": "Bronze"
+    },
+    {
+        "id": "5",
+        "firstName": "David",
+        "lastName": "Davis",
+        "username": "ddavis@email.com",
+        "email": "",
+        "address": "5",
+        "rewardsLevel": ""
+    },
+    {
+        "id": "6",
+        "firstName": "Emily",
+        "lastName": "Garrofolo",
+        "username": "eGarrofolo",
+        "email": "egarrofolo@email.com",
+        "address": "6",
+        "rewardsLevel": "Gold"
+    },
+    {
+        "id": "7",
+        "firstName": "Nick",
+        "lastName": "James",
+        "username": "nJames",
+        "email": "njames@email.com",
+        "address": "7",
+        "rewardsLevel": "Silver"
+    },
+    {
+        "id": "8",
+        "firstName": "Anthony",
+        "lastName": "Williams",
+        "username": "aWilliams",
+        "email": "awilliams@email.com",
+        "address": "8",
+        "rewardsLevel": "Gold"
+    }
+]

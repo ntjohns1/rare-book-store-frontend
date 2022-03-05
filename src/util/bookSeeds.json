@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "title": " Because the Night. Mysterious Press. 1987.",
+        "author": "James Ellroy",
+        "genre": "Mystery",
+        "yearPublished": "1987",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Near Fine",
+        "price": "120"
+    },
+    {
+        "id": "2",
+        "title": "85 Poems. London, Hutchinson, 1993.",
+        "author": "Gavin Ewart",
+        "genre": "Poetry",
+        "yearPublished": "1993",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Near Fine",
+        "price": "75"
+    },
+    {
+        "id": "3",
+        "title": "Who's Afraid of Virginia Woolf?",
+        "author": "Edward Albee",
+        "genre": "Drama",
+        "yearPublished": "1964",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Fine",
+        "price": "1400"
+    },
+    {
+        "id": "4",
+        "title": "Northanger Abbey",
+        "author": "Jane Austin",
+        "genre": "",
+        "yearPublished": "1939",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Very Good",
+        "price": "72"
+    },
+    {
+        "id": "5",
+        "title": "The Merry Wives of Windsor",
+        "author": "William Shakespeare",
+        "genre": "Drama",
+        "yearPublished": "1939",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Near Fine",
+        "price": "50"
+    },
+    {
+        "id": "6",
+        "title": "Andree de Taverney or The Downfall of French Monarchy",
+        "author": "Alexander Dumas",
+        "genre": "Fiction",
+        "yearPublished": "1896",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Good",
+        "price": "90"
+    },
+    {
+        "id": "7",
+        "title": "The Earthsea Quartet",
+        "author": "Ursula K. Le Guin",
+        "genre": "Fantasy",
+        "yearPublished": "2019",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Fine",
+        "price": "255"
+    },
+    {
+        "id": "8",
+        "title": "Mistress Pat: A Novel of Silver Bush.",
+        "author": "L.M. Montgomery",
+        "genre": "Fiction",
+        "yearPublished": "1925",
+        "edition": "1st",
+        "binding": "Hardcover",
+        "condition": "Good",
+        "price": "50"
+    }
+]

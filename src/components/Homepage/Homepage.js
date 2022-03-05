@@ -11,7 +11,6 @@ export default function Homepage() {
                 </Col>
                 <Col xs={10}>
                     {/* {loggedStatus ? ( */}
-                        <Container>
                             <Row>
                                 <Col xs={2}>
                                     <div className="p-3">
@@ -26,7 +25,6 @@ export default function Homepage() {
                                     </div>
                                 </Col>
                             </Row>
-                        </Container>
                     {/* ) : (
                         <>
                             <h2>
