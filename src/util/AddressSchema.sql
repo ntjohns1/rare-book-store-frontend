@@ -6,12 +6,12 @@ CREATE TABLE `address` (
   `street2` varchar(255) default NULL,
   `city` varchar(255),
   `state` varchar(50) default NULL,
-  `address` varchar(10) default NULL,
+  `zipcode` varchar(10) default NULL,
   `phone` varchar(100) default NULL,
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
 
-INSERT INTO `address` (`street1`,`street2`,`City`,`State`,`address`,`phone`)
+INSERT INTO `address` (`street1`,`street2`,`City`,`State`,`zipcode`,`phone`)
 VALUES
   ("7976 Nec Rd.", "Apt. 765","Little Rock","MI","51218","(312) 591-7619"),
   ("6402 CLear Ave",NULL,"South Burlington","AR","95156","(416) 517-3748"),
@@ -63,7 +63,7 @@ VALUES
   ("3135 A Rd.",NULL,"Idaho Falls","KS","51228","(879) 278-2338"),
   ("5656 Interdum Rd.",NULL,"Gaithersburg","MI","71627","(842) 573-3132"),
   ("8901 Pellentesque Rd.",NULL,"Dover","IL","38244","(732) 227-9562");
-INSERT INTO `address` (`street`,`city`,`state`,`address`,`phone`)
+INSERT INTO `address` (`street`,`city`,`state`,`zipcode`,`phone`)
 VALUES
   ("2629 Augue Rd.","Apt. 130","Aurora","OK","66032","(784) 757-2100"),
   ("1781 Aliquam St.","Apt. 822","Hartford","OH","36128","(543) 384-5678"),

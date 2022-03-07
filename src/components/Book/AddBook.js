@@ -9,7 +9,7 @@ export default function AddBook() {
         title: '',
         author: '',
         genre: '',
-        yearPublished: '',
+        yearWritten: '',
         edition: '',
         binding: '',
         condition: '',
@@ -37,7 +37,7 @@ export default function AddBook() {
             title,
             author,
             genre,
-            yearPublished,
+            yearWritten,
             edition,
             binding,
             condition,
@@ -59,7 +59,7 @@ export default function AddBook() {
             title,
             author,
             genre,
-            yearPublished,
+            yearWritten,
             edition,
             binding,
             condition,
@@ -142,8 +142,8 @@ export default function AddBook() {
                                                     <Form.Group>
                                                         <label>Year Written</label>
                                                         <Form.Control
-                                                            name="yearPublished"
-                                                            value={formState.yearPublished}
+                                                            name="yearWritten"
+                                                            value={formState.yearWritten}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />

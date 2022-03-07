@@ -30,7 +30,7 @@ export default function BookTable() {
                             <td>{book.title}</td>
                             <td>{book.author}</td>
                             <td>{book.genre}</td>
-                            <td>{book.yearPublished}</td>
+                            <td>{book.yearWritten}</td>
                             <td>{book.edition}</td>
                             <td>{book.binding}</td>
                             <td>{book.condition}</td>

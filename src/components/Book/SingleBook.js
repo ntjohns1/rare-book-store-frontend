@@ -12,7 +12,7 @@ export default function SingleBook() {
         title: books[id] ? books[id].title : '',
         author: books[id] ? books[id].author : '',
         genre: books[id] ? books[id].genre : '',
-        yearPublished: books[id] ? books[id].yearPublished : '',
+        yearWritten: books[id] ? books[id].yearWritten : '',
         edition: books[id] ? books[id].edition : '',
         binding: books[id] ? books[id].binding : '',
         condition: books[id] ? books[id].condition : '',
@@ -40,7 +40,7 @@ export default function SingleBook() {
             title,
             author,
             genre,
-            yearPublished,
+            yearWritten,
             edition,
             binding,
             condition,
@@ -62,7 +62,7 @@ export default function SingleBook() {
             title,
             author,
             genre,
-            yearPublished,
+            yearWritten,
             edition,
             binding,
             condition,
@@ -148,8 +148,8 @@ export default function SingleBook() {
                                                     <Form.Group>
                                                         <label>Year Written</label>
                                                         <Form.Control
-                                                            name="yearPublished"
-                                                            value={formState.yearPublished}
+                                                            name="yearWritten"
+                                                            value={formState.yearWritten}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />

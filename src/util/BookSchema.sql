@@ -1,15 +1,15 @@
 DROP TABLE IF EXISTS `book`;
 
 CREATE TABLE `book` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `bookId` mediumint(8) unsigned NOT NULL auto_increment,
   `title` TEXT default NULL,
   `author` varchar(255) default NULL,
   `genre` TEXT default NULL,
   `year` mediumint default NULL,
   `binding` TEXT default NULL,
   `edition` TEXT default NULL,
-  `price` DECIMAL(4,2) default NULL,
-  PRIMARY KEY (`id`)
+  `price` DECIMAL(7,2) default NULL,
+  PRIMARY KEY (`bookId`)
 ) AUTO_INCREMENT=1;
 
 INSERT INTO `book` (`title`,`author`,`genre`,`year`,`binding`,`edition`,`price`)
