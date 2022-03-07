@@ -1,3 +1,4 @@
+const AddressSeeds = 
 [
 	{
 		id: 1,
@@ -112,12 +113,13 @@
 		street1: "2756 Ante Av.",
 		street2: null,
 		city: "Cambide",
-		state: "Masachusetts,
-		zipode": "4681",
-	"phoe: "(566) 882-86"
-	},	
-	id: 14,
-	treet1 "446 Aliquam Ave",
+		state: "Masachusetts",
+		zipCode: "4681",
+		phone: "(566) 882-86"
+	},
+	{
+		id: 14,
+		street1: "446 Aliquam Ave",
 		street2: null,
 		city: "Springdale",
 		state: "Arkansas",
@@ -191,13 +193,14 @@
 		id: 22,
 		street1: "2032 Vitae Road",
 		street2: "Apt. E",
-		city: "Bideport",
-		state: "onnecticut,
-		zipode": "8181",
-	"phoe: "(310) 267-17"
-	},	
-	id: 23,
-	treet1 "P.O. Box 821",
+		city: "Bridgeport",
+		state: "Connecticut",
+		zipCode: "84181",
+		phone: "(310) 267-17"
+	},
+	{
+		id: 23,
+		street1: "P.O. Box 821",
 		street2: null,
 		city: "Minneapolis",
 		state: "Minnesota",
@@ -207,11 +210,15 @@
 	{
 		id: 24,
 		street1: "5955 Tinidnt Road",
-		street2: "Apt. B",		"city: "Hartford",
+		street2: "Apt. B",
+		city: "Hartford",
 		state: "Connecticu",
-	"zipCod": 38685",		"phone: "(924) 549-3888"
-	},		id:25,
-		tret1 "7961 Semper Road",
+		zipCode: "38685",
+		phone: "(924) 549-3888"
+	},
+	{
+		id: 25,
+		street1: "7961 Semper Road",
 		street2: null,
 		city: "Bellevue",
 		state: "Nebraska",
@@ -293,12 +300,14 @@
 	{
 		id: 34,
 		street1: "4683 Graid Rd.",
-		street2: "Apt. 56"
-		cit: "Bowling Green",
-	state "Kentucky",
-	zipCode "63171",
-	"phon: (637) 757-1744"
-	},	{	id 35,
+		street2: "Apt. 56",
+		city: "Bowling Green",
+		state: "Kentucky",
+		zipCode: "63171",
+		phone: "(637) 757-1744"
+	},
+	{
+		id: 35,
 		street1: "P.O. Box 552",
 		street2: "Apt. F",
 		city: "Butte",
@@ -527,12 +536,13 @@
 		street1: "P.O. Box 840",
 		street2: "Apt. 78",
 		city: "Cambide",
-		state: "Masachusetts,
-		zipode": "6373",
-	"phoe: "(613) 172-33"
-	},	
-	id: 61,
-	treet1 "1303 Vitae Avenue",
+		state: "Masachusetts",
+		zipCode: "64373",
+		phone: "(613) 172-33"
+	},
+	{
+		id: 61,
+		street1: "1303 Vitae Avenue",
 		street2: "Apt. C2",
 		city: "Mesa",
 		state: "Arizona",
@@ -551,7 +561,7 @@
 	{
 		id: 63,
 		street1: "5887 Consequat, Ave",
-		street2:null,
+		street2: null,
 		city: "San Francisco",
 		state: "California",
 		zipCode: "96188",
@@ -589,12 +599,13 @@
 		street1: "3089 Magna. Ave",
 		street2: "Apt. G",
 		city: "Meidan",
-		state: "Iaho,
-		zipCode: 2136",
-		phone: "(3) 521-4512"
-	},	
-	id: 68,
-	treet1 "8600 Mauris St.",
+		state: "Idaho",
+		zipCode: "21346",
+		phone: "(334) 521-4512"
+	},
+	{
+		id: 68,
+		street1: "8600 Mauris St.",
 		street2: "Apt. C",
 		city: "Boston",
 		state: "Massachusetts",
@@ -651,13 +662,14 @@
 		street1: "P.O. Box 813",
 		street2: "Apt. 36",
 		city: "Grand Raid",
-		state: "Michiga",		"zipCode": "44141",
-		phone": "(198)267-671"
-	},	
-	d 75,
-	steet1: "4581 Pede. Av.",
-	street: "Apt. 427",
-	city "Annapolis",
+		state: "Michiga", "zipCode": "44141",
+		phone: "(198)267-671"
+	},
+	{
+		id: 75,
+		steet1: "4581 Pede. Av.",
+		street: "Apt. 427",
+		city: "Annapolis",
 		state: "Maryland",
 		zipCode: "32116",
 		phone: "(129) 764-6162"
@@ -800,11 +812,15 @@
 	{
 		id: 91,
 		street1: "7350 Tinidnt Rd.",
-		street2: null,		"city: "Flint",
-		state: "Michiga",
-	"zipCod": 75908",		"phone: "(215) 424-7196"
-	},		id:92,
-		tret1 "4150 Nostra, St.",
+		street2: null, 
+		city: "Flint",
+		state: "Michigan",
+		zipCode: "75908",		
+		phone: "(215) 424-7196"
+	},
+	{
+		id: 92,
+		street1: "4150 Nostra, St.",
 		street2: "Apt. B",
 		city: "Huntsville",
 		state: "Alabama",
@@ -956,3 +972,5 @@
 		phone: "(873) 731-3658"
 	}
 ]
+
+export default AddressSeeds;

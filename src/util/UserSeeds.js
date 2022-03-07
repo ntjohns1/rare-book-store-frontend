@@ -6,7 +6,7 @@ const UserSeeds = [
 		username: "thompson.geoffrey@google.com",
 		email: "thompson.geoffrey@google.com",
 		address: 1,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 2,
@@ -15,7 +15,7 @@ const UserSeeds = [
 		username: "barnes_colby@hotmail.com",
 		email: "barnes_colby@hotmail.com",
 		address: 2,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 3,
@@ -33,7 +33,7 @@ const UserSeeds = [
 		username: "mckeebrendan@aol.com",
 		email: "mckeebrendan@aol.com",
 		address: 4,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 5,
@@ -42,7 +42,7 @@ const UserSeeds = [
 		username: "alvarez.lysandra@icloud.com",
 		email: "alvarez.lysandra@icloud.com",
 		address: 5,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 6,
@@ -69,7 +69,7 @@ const UserSeeds = [
 		username: "calebwaters7249@google.com",
 		email: "calebwaters7249@google.com",
 		address: 8,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 9,
@@ -78,7 +78,7 @@ const UserSeeds = [
 		username: "n.wong@google.com",
 		email: "n.wong@google.com",
 		address: 9,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 10,
@@ -87,7 +87,7 @@ const UserSeeds = [
 		username: "y_vargas@hotmail.com",
 		email: "y_vargas@hotmail.com",
 		address: 10,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 11,
@@ -96,7 +96,7 @@ const UserSeeds = [
 		username: "newton.portia@aol.com",
 		email: "newton.portia@aol.com",
 		address: 11,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 12,
@@ -132,7 +132,7 @@ const UserSeeds = [
 		username: "riveraangela3798@icloud.com",
 		email: "riveraangela3798@icloud.com",
 		address: 15,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 16,
@@ -141,7 +141,7 @@ const UserSeeds = [
 		username: "w-armand@icloud.com",
 		email: "w-armand@icloud.com",
 		address: 16,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 17,
@@ -159,7 +159,7 @@ const UserSeeds = [
 		username: "p-franks@google.com",
 		email: "p-franks@google.com",
 		address: 18,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 19,
@@ -168,7 +168,7 @@ const UserSeeds = [
 		username: "nash.stark6057@aol.com",
 		email: "nash.stark6057@aol.com",
 		address: 19,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 20,
@@ -177,7 +177,7 @@ const UserSeeds = [
 		username: "edwards.yoshi@icloud.com",
 		email: "edwards.yoshi@icloud.com",
 		address: 20,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 21,
@@ -195,7 +195,7 @@ const UserSeeds = [
 		username: "bentley-nina@protonmail.com",
 		email: "bentley-nina@protonmail.com",
 		address: 22,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 23,
@@ -267,7 +267,7 @@ const UserSeeds = [
 		username: "egardner@yahoo.com",
 		email: "egardner@yahoo.com",
 		address: 30,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 31,
@@ -294,7 +294,7 @@ const UserSeeds = [
 		username: "roth.merritt8113@aol.com",
 		email: "roth.merritt8113@aol.com",
 		address: 33,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 34,
@@ -312,7 +312,7 @@ const UserSeeds = [
 		username: "courtneyrosa@icloud.com",
 		email: "courtneyrosa@icloud.com",
 		address: 35,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 36,
@@ -339,7 +339,7 @@ const UserSeeds = [
 		username: "miriam.huff@protonmail.com",
 		email: "miriam.huff@protonmail.com",
 		address: 38,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 39,
@@ -357,7 +357,7 @@ const UserSeeds = [
 		username: "willismicah4036@yahoo.com",
 		email: "willismicah4036@yahoo.com",
 		address: 40,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 41,
@@ -366,7 +366,7 @@ const UserSeeds = [
 		username: "romero_melvin2860@yahoo.com",
 		email: "romero_melvin2860@yahoo.com",
 		address: 41,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 42,
@@ -393,7 +393,7 @@ const UserSeeds = [
 		username: "manning.isadora8488@outlook.com",
 		email: "manning.isadora8488@outlook.com",
 		address: 44,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 45,
@@ -447,7 +447,7 @@ const UserSeeds = [
 		username: "pandora_bartlett@icloud.com",
 		email: "pandora_bartlett@icloud.com",
 		address: 50,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 51,
@@ -474,7 +474,7 @@ const UserSeeds = [
 		username: "j.osborn8257@protonmail.com",
 		email: "j.osborn8257@protonmail.com",
 		address: 53,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 54,
@@ -501,7 +501,7 @@ const UserSeeds = [
 		username: "w-omar@aol.com",
 		email: "w-omar@aol.com",
 		address: 56,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 57,
@@ -519,7 +519,7 @@ const UserSeeds = [
 		username: "p-jameson@hotmail.com",
 		email: "p-jameson@hotmail.com",
 		address: 58,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 59,
@@ -528,7 +528,7 @@ const UserSeeds = [
 		username: "kasper_jarvis4073@outlook.com",
 		email: "kasper_jarvis4073@outlook.com",
 		address: 59,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 60,
@@ -537,7 +537,7 @@ const UserSeeds = [
 		username: "cwilkerson@yahoo.com",
 		email: "cwilkerson@yahoo.com",
 		address: 60,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 61,
@@ -546,7 +546,7 @@ const UserSeeds = [
 		username: "flynn.karleigh@outlook.com",
 		email: "flynn.karleigh@outlook.com",
 		address: 61,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 62,
@@ -591,7 +591,7 @@ const UserSeeds = [
 		username: "yeo.munoz3193@aol.com",
 		email: "yeo.munoz3193@aol.com",
 		address: 66,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 67,
@@ -627,7 +627,7 @@ const UserSeeds = [
 		username: "rcarpenter@protonmail.com",
 		email: "rcarpenter@protonmail.com",
 		address: 70,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 71,
@@ -636,7 +636,7 @@ const UserSeeds = [
 		username: "sellerspalmer@aol.com",
 		email: "sellerspalmer@aol.com",
 		address: 71,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 72,
@@ -663,7 +663,7 @@ const UserSeeds = [
 		username: "blaze.jackson@hotmail.com",
 		email: "blaze.jackson@hotmail.com",
 		address: 74,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 75,
@@ -672,7 +672,7 @@ const UserSeeds = [
 		username: "donovan_woods@yahoo.com",
 		email: "donovan_woods@yahoo.com",
 		address: 75,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 76,
@@ -681,7 +681,7 @@ const UserSeeds = [
 		username: "p_blackburn@aol.com",
 		email: "p_blackburn@aol.com",
 		address: 76,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 77,
@@ -690,7 +690,7 @@ const UserSeeds = [
 		username: "s.giles632@aol.com",
 		email: "s.giles632@aol.com",
 		address: 77,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 78,
@@ -699,7 +699,7 @@ const UserSeeds = [
 		username: "mgarrison1016@aol.com",
 		email: "mgarrison1016@aol.com",
 		address: 78,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 79,
@@ -726,7 +726,7 @@ const UserSeeds = [
 		username: "knox.rebecca3009@protonmail.com",
 		email: "knox.rebecca3009@protonmail.com",
 		address: 81,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 82,
@@ -735,7 +735,7 @@ const UserSeeds = [
 		username: "hernandezlamar@icloud.com",
 		email: "hernandezlamar@icloud.com",
 		address: 82,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 83,
@@ -744,7 +744,7 @@ const UserSeeds = [
 		username: "e-blackburn@yahoo.com",
 		email: "e-blackburn@yahoo.com",
 		address: 83,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 84,
@@ -762,7 +762,7 @@ const UserSeeds = [
 		username: "leblanc_imelda8514@hotmail.com",
 		email: "leblanc_imelda8514@hotmail.com",
 		address: 85,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 86,
@@ -780,7 +780,7 @@ const UserSeeds = [
 		username: "j.ratliff3654@outlook.com",
 		email: "j.ratliff3654@outlook.com",
 		address: 87,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 88,
@@ -789,7 +789,7 @@ const UserSeeds = [
 		username: "z.mclean9116@outlook.com",
 		email: "z.mclean9116@outlook.com",
 		address: 88,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 89,
@@ -807,7 +807,7 @@ const UserSeeds = [
 		username: "i.valencia5815@outlook.com",
 		email: "i.valencia5815@outlook.com",
 		address: 90,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 91,
@@ -816,7 +816,7 @@ const UserSeeds = [
 		username: "noragreer@google.com",
 		email: "noragreer@google.com",
 		address: 91,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 92,
@@ -834,7 +834,7 @@ const UserSeeds = [
 		username: "guzman_nasim@icloud.com",
 		email: "guzman_nasim@icloud.com",
 		address: 93,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 94,
@@ -870,7 +870,7 @@ const UserSeeds = [
 		username: "c_flynn@yahoo.com",
 		email: "c_flynn@yahoo.com",
 		address: 97,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	},
 	{
 		id: 98,
@@ -897,7 +897,7 @@ const UserSeeds = [
 		username: "tnunez1111@aol.com",
 		email: "tnunez1111@aol.com",
 		address: 100,
-		rewardsLevel: "Bronze,"
+		rewardsLevel: "Bronze"
 	}	
 ]
 

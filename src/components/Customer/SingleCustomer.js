@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
+import customers from '../../util/UserSeeds';
+import address from '../../util/AddressSeeds'
 
-export default function AddCustomer() {
+export default function SingleCustomer() {
+    const id = useParams().customerId - 1;
+
     // form input to add Customer
     const [formState, setFormState] = useState({
-        firstName: '',
-        lastName: '',
-        username: '',
-        email: '',
-        street1: '',
-        street2: '',
-        city: '',
-        state: '',
-        zipCode: '',
-        phone: '',
-        rewardsLevel: '',
+        firstName: customers[id] ? customers[id].firstName : '',
+        lastName: customers[id] ? customers[id].lastName : '',
+        username: customers[id] ? customers[id].username : '',
+        email: customers[id] ? customers[id].email : '',
+        street1: address[id] ? address[id].street1 : '',
+        street2: address[id] ? address[id].street2 : '',
+        city: address[id] ? address[id].city : '',
+        state: address[id] ? address[id].state : '',
+        zipCode: address[id] ? address[id].zipCode : '',
+        phone: address[id] ? address[id].phone : '',
+        rewardsLevel: customers[id] ? customers[id].rewardsLevel : '',
     });
-
-
-    // let address = { ...customer.address }
-    // console.log(address);
 
     // update state based on form input changes
     const handleChange = (event) => {
@@ -82,11 +82,11 @@ export default function AddCustomer() {
 
     return (
         <Container fluid>
-            <Row>
-            <Col md="1">
-                <Sidebar />
-            </Col>
-            <Col md="11">
+            <Row >
+                <Col md="1">
+                    <Sidebar />
+                </Col>
+                <Col md="11">
                     <Row className='m-3'>
                         <Col md="4">
                             <Card className="card-user">
@@ -105,7 +105,7 @@ export default function AddCustomer() {
                         <Col md="8">
                             <Card className="card-user">
                                 <Card.Header>
-                                    <Card.Title tag="h5">Add Customer</Card.Title>
+                                    <Card.Title tag="h5">{formState.firstName} {formState.lastName}</Card.Title>
                                 </Card.Header>
                                 <Card.Body>
                                     <Form onSubmit={handleFormSubmit}>
@@ -249,10 +249,17 @@ export default function AddCustomer() {
                                                     color="primary"
                                                     type="submit"
                                                 >
-                                                    Add Customer
+                                                    Update Customer
                                                 </Button>
                                                 <Button
                                                     className="btn-round mx-3"
+                                                    variant="danger"
+                                                    onClick={() => goBack()}
+                                                >
+                                                    Delete Customer
+                                                </Button>
+                                                <Button
+                                                    className="btn-round ml-3"
                                                     variant="secondary"
                                                     onClick={() => goBack()}
                                                 >
@@ -265,7 +272,7 @@ export default function AddCustomer() {
                             </Card>
                         </Col>
                     </Row>
-            </Col>
+                </Col>
             </Row>
         </Container>
     )

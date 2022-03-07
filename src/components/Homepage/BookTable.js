@@ -1,9 +1,12 @@
 import { Table } from "react-bootstrap"
-import bookSeeds from "../../util/bookSeeds"
+import books from "../../util/bookSeeds"
 export default function BookTable() {
-
+    function goToBook(bookId) {
+        document.location.replace(`/book/${bookId}`);
+    }
     return (
         <Table striped bordered hover variant="dark">
+
             <thead>
                 <tr>
                     <th>#</th>
@@ -18,20 +21,20 @@ export default function BookTable() {
                 </tr>
             </thead>
             <tbody>
-                {bookSeeds.map((book) => (
+                {books.map((book) => (
                     // <tr onClick={() => goToSingleBook(book._id)}
-                    <tr>
+                    <tr onClick={() => goToBook(book.id)} key={book.id}>
                         <td>{book.id}</td>
                         <td>{book.title}</td>
-                        <td>{book.author}</td>   
-                        <td>{book.genre}</td>   
-                        <td>{book.yearPublished}</td>   
-                        <td>{book.edition}</td>   
-                        <td>{book.binding}</td>   
-                        <td>{book.condition}</td>   
-                        <td>${book.price}</td>   
+                        <td>{book.author}</td>
+                        <td>{book.genre}</td>
+                        <td>{book.yearPublished}</td>
+                        <td>{book.edition}</td>
+                        <td>{book.binding}</td>
+                        <td>{book.condition}</td>
+                        <td>${book.price}</td>
                     </tr>
-                    ))}
+                ))}
             </tbody>
         </Table>
 
