@@ -8,7 +8,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1420.12"
+		price: 1420.12
 	},
 	{
 		id: 2,
@@ -19,7 +19,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "291.66"
+		price: 291.66
 	},
 	{
 		id: 3,
@@ -30,7 +30,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "951.35"
+		price: 951.35
 	},
 	{
 		id: 4,
@@ -41,7 +41,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1464.30"
+		price: 1464.30
 	},
 	{
 		id: 5,
@@ -52,7 +52,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "96.99"
+		price: 96.99
 	},
 	{
 		id: 6,
@@ -63,7 +63,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "329.51"
+		price: 329.51
 	},
 	{
 		id: 7,
@@ -74,7 +74,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "349.28"
+		price: 349.28
 	},
 	{
 		id: 8,
@@ -85,7 +85,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "895.83"
+		price: 895.83
 	},
 	{
 		id: 9,
@@ -96,7 +96,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "886.85"
+		price: 886.85
 	},
 	{
 		id: 10,
@@ -107,7 +107,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1183.75"
+		price: 1183.75
 	},
 	{
 		id: 11,
@@ -118,7 +118,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "909.28"
+		price: 909.28
 	},
 	{
 		id: 12,
@@ -129,7 +129,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1023.37"
+		price: 1023.37
 	},
 	{
 		id: 13,
@@ -140,7 +140,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "896.70"
+		price: 896.70
 	},
 	{
 		id: 14,
@@ -151,7 +151,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "880.39"
+		price: 880.39
 	},
 	{
 		id: 15,
@@ -162,7 +162,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "981.40"
+		price: 981.40
 	},
 	{
 		id: 16,
@@ -173,7 +173,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1079.61"
+		price: 1079.61
 	},
 	{
 		id: 17,
@@ -184,7 +184,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "1335.13"
+		price: 1335.13
 	},
 	{
 		id: 18,
@@ -195,7 +195,7 @@ let bookSeeds = [
 		"edition": "1st",
 		"binding": "Hardcover",
 		"condition": "Fine",
-		"price": "1433.06"
+		"price":"1433.06
 	},
 	{
 		id: 19,
@@ -206,7 +206,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "846.67"
+		price: 846.67
 	},
 	{
 		id: 20,
@@ -217,7 +217,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "254.60"
+		price: 254.60
 	},
 	{
 		id: 21,
@@ -228,7 +228,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "500.70"
+		price: 500.70
 	},
 	{
 		id: 22,
@@ -239,7 +239,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "693.59"
+		price: 693.59
 	},
 	{
 		id: 23,
@@ -250,7 +250,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "288.56"
+		price: 288.56
 	},
 	{
 		id: 24,
@@ -261,7 +261,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "1029.19"
+		price: 1029.19
 	},
 	{
 		id: 25,
@@ -272,7 +272,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1476.05"
+		price: 1476.05
 	},
 	{
 		id: 26,
@@ -283,7 +283,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "349.36"
+		price: 349.36
 	},
 	{
 		id: 27,
@@ -294,7 +294,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1316.52"
+		price: 1316.52
 	},
 	{
 		id: 28,
@@ -305,7 +305,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1421.78"
+		price: 1421.78
 	},
 	{
 		id: 29,
@@ -316,7 +316,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "969.64"
+		price: 969.64
 	},
 	{
 		id: 30,
@@ -327,7 +327,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1190.96"
+		price: 1190.96
 	},
 	{
 		id: 31,
@@ -338,7 +338,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "676.79"
+		price: 676.79
 	},
 	{
 		id: 32,
@@ -349,7 +349,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1153.18"
+		price: 1153.18
 	},
 	{
 		id: 33,
@@ -360,7 +360,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "855.06"
+		price: 855.06
 	},
 	{
 		id: 34,
@@ -371,7 +371,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "853.27"
+		price: 853.27
 	},
 	{
 		id: 35,
@@ -382,7 +382,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "930.47"
+		price: 930.47
 	},
 	{
 		id: 36,
@@ -393,7 +393,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "1425.69"
+		price: 1425.69
 	},
 	{
 		id: 37,
@@ -404,7 +404,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1117.59"
+		price: 1117.59
 	},
 	{
 		id: 38,
@@ -415,7 +415,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "787.26"
+		price: 787.26
 	},
 	{
 		id: 39,
@@ -426,7 +426,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "63.47"
+		price: 63.47
 	},
 	{
 		id: 40,
@@ -437,7 +437,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "1211.55"
+		price: 1211.55
 	},
 	{
 		id: 41,
@@ -448,7 +448,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1365.16"
+		price: 1365.16
 	},
 	{
 		id: 42,
@@ -459,7 +459,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "344.69"
+		price: 344.69
 	},
 	{
 		id: 43,
@@ -470,7 +470,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "1423.84"
+		price: 1423.84
 	},
 	{
 		id: 44,
@@ -481,7 +481,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "202.65"
+		price: 202.65
 	},
 	{
 		id: 45,
@@ -492,7 +492,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1465.26"
+		price: 1465.26
 	},
 	{
 		id: 46,
@@ -503,7 +503,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "104.55"
+		price: 104.55
 	},
 	{
 		id: 47,
@@ -514,7 +514,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "446.01"
+		price: 446.01
 	},
 	{
 		id: 48,
@@ -525,7 +525,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1169.58"
+		price: 1169.58
 	},
 	{
 		id: 49,
@@ -536,7 +536,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1498.88"
+		price: 1498.88
 	},
 	{
 		id: 50,
@@ -547,7 +547,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1343.81"
+		price: 1343.81
 	},
 	{
 		id: 51,
@@ -558,7 +558,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "303.91"
+		price: 303.91
 	},
 	{
 		id: 52,
@@ -569,7 +569,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "634.37"
+		price: 634.37
 	},
 	{
 		id: 53,
@@ -580,7 +580,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "196.55"
+		price: 196.55
 	},
 	{
 		id: 54,
@@ -591,7 +591,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "995.61"
+		price: 995.61
 	},
 	{
 		id: 55,
@@ -602,7 +602,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1465.67"
+		price: 1465.67
 	},
 	{
 		id: 56,
@@ -613,7 +613,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "100.64"
+		price: 100.64
 	},
 	{
 		id: 57,
@@ -624,7 +624,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1366.45"
+		price: 1366.45
 	},
 	{
 		id: 58,
@@ -635,7 +635,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "207.90"
+		price: 207.90
 	},
 	{
 		id: 59,
@@ -646,7 +646,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1347.21"
+		price: 1347.21
 	},
 	{
 		id: 60,
@@ -657,7 +657,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "143.68"
+		price: 143.68
 	},
 	{
 		id: 61,
@@ -668,7 +668,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "198.45"
+		price: 198.45
 	},
 	{
 		id: 62,
@@ -679,7 +679,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "332.88"
+		price: 332.88
 	},
 	{
 		id: 63,
@@ -690,7 +690,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "954.78"
+		price: 954.78
 	},
 	{
 		id: 64,
@@ -701,7 +701,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1340.49"
+		price: 1340.49
 	},
 	{
 		id: 65,
@@ -712,7 +712,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "835.02"
+		price: 835.02
 	},
 	{
 		id: 66,
@@ -723,7 +723,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "838.59"
+		price: 838.59
 	},
 	{
 		id: 67,
@@ -734,7 +734,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "843.37"
+		price: 843.37
 	},
 	{
 		id: 68,
@@ -745,7 +745,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "464.87"
+		price: 464.87
 	},
 	{
 		id: 69,
@@ -756,7 +756,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1118.39"
+		price: 1118.39
 	},
 	{
 		id: 70,
@@ -767,7 +767,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "990.87"
+		price: 990.87
 	},
 	{
 		id: 71,
@@ -778,7 +778,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "177.19"
+		price: 177.19
 	},
 	{
 		id: 72,
@@ -789,7 +789,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1475.37"
+		price: 1475.37
 	},
 	{
 		id: 73,
@@ -800,7 +800,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "987.23"
+		price: 987.23
 	},
 	{
 		id: 74,
@@ -811,7 +811,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "974.95"
+		price: 974.95
 	},
 	{
 		id: 75,
@@ -822,7 +822,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "847.07"
+		price: 847.07
 	},
 	{
 		id: 76,
@@ -833,7 +833,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1493.39"
+		price: 1493.39
 	},
 	{
 		id: 77,
@@ -844,7 +844,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "59.71"
+		price: 59.71
 	},
 	{
 		id: 78,
@@ -855,7 +855,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "919.28"
+		price: 919.28
 	},
 	{
 		id: 79,
@@ -866,7 +866,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1047.11"
+		price: 1047.11
 	},
 	{
 		id: 80,
@@ -877,7 +877,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1457.34"
+		price: 1457.34
 	},
 	{
 		id: 81,
@@ -888,7 +888,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1291.01"
+		price: 1291.01
 	},
 	{
 		id: 82,
@@ -899,7 +899,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1392.88"
+		price: 1392.88
 	},
 	{
 		id: 83,
@@ -910,7 +910,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "1147.70"
+		price: 1147.70
 	},
 	{
 		id: 84,
@@ -921,7 +921,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "1009.59"
+		price: 1009.59
 	},
 	{
 		id: 85,
@@ -932,7 +932,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1136.08"
+		price: 1136.08
 	},
 	{
 		id: 86,
@@ -943,7 +943,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1448.01"
+		price: 1448.01
 	},
 	{
 		id: 87,
@@ -954,7 +954,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1327.33"
+		price: 1327.33
 	},
 	{
 		id: 88,
@@ -965,7 +965,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "603.18"
+		price: 603.18
 	},
 	{
 		id: 89,
@@ -976,7 +976,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1014.42"
+		price: 1014.42
 	},
 	{
 		id: 90,
@@ -987,7 +987,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1103.28"
+		price: 1103.28
 	},
 	{
 		id: 91,
@@ -998,7 +998,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "749.15"
+		price: 749.15
 	},
 	{
 		id: 92,
@@ -1009,7 +1009,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1411.76"
+		price: 1411.76
 	},
 	{
 		id: 93,
@@ -1020,7 +1020,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "100.52"
+		price: 100.52
 	},
 	{
 		id: 94,
@@ -1031,7 +1031,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "709.80"
+		price: 709.80
 	},
 	{
 		id: 95,
@@ -1042,7 +1042,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "882.02"
+		price: 882.02
 	},
 	{
 		id: 96,
@@ -1053,7 +1053,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "908.58"
+		price: 908.58
 	},
 	{
 		id: 97,
@@ -1064,7 +1064,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "52.72"
+		price: 52.72
 	},
 	{
 		id: 98,
@@ -1075,7 +1075,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "931.69"
+		price: 931.69
 	},
 	{
 		id: 99,
@@ -1086,7 +1086,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "815.17"
+		price: 815.17
 	},
 	{
 		id: 100,
@@ -1097,7 +1097,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "419.89"
+		price: 419.89
 	},
 	{
 		id: 101,
@@ -1108,7 +1108,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "639.93"
+		price: 639.93
 	},
 	{
 		id: 102,
@@ -1119,7 +1119,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1210.90"
+		price: 1210.90
 	},
 	{
 		id: 103,
@@ -1130,7 +1130,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "355.68"
+		price: 355.68
 	},
 	{
 		id: 104,
@@ -1141,7 +1141,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "221.24"
+		price: 221.24
 	},
 	{
 		id: 105,
@@ -1152,7 +1152,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Very Good",
-		price: "1133.94"
+		price: 1133.94
 	},
 	{
 		id: 106,
@@ -1163,7 +1163,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Good",
-		price: "1080.25"
+		price: 1080.25
 	},
 	{
 		id: 107,
@@ -1174,7 +1174,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Near Fine",
-		price: "383.81"
+		price: 383.81
 	},
 	{
 		id: 108,
@@ -1185,7 +1185,7 @@ let bookSeeds = [
 		edition: "1st",
 		binding: "Hardcover",
 		condition: "Fine",
-		price: "535.91"
+		price: 535.91
 	}
 
 ]

@@ -1,11 +1,19 @@
+impo
 import { Card, Toast } from 'react-bootstrap';
 import customers from '../../util/UserSeeds';
 
 
 export default function CustomerList() {
+    
+        // fetch("http://localhost:8080/customers")
+        //     .then(response => response.json())
+        //     .then(result => setRecords(result))
+        //     .catch(console.log);
+    
     function goToCustomer(customerId) {
           document.location.replace(`/customer/${customerId}`);
     }
+    
     return (
         <Card>
             <Card.Header>
