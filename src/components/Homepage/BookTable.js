@@ -25,8 +25,8 @@ export default function BookTable() {
                 <tbody>
                     {books.map((book) => (
                         // <tr onClick={() => goToSingleBook(book._id)}
-                        <tr onClick={() => goToBook(book.id)} key={book.id}>
-                            <td>{book.id}</td>
+                        <tr onClick={() => goToBook(book.bookId)} key={book.bookId}>
+                            <td>{book.bookId}</td>
                             <td>{book.title}</td>
                             <td>{book.author}</td>
                             <td>{book.genre}</td>

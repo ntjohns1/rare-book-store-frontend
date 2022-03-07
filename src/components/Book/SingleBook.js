@@ -9,14 +9,14 @@ export default function SingleBook() {
 
     // form input to add Customer
     const [formState, setFormState] = useState({
-        title: books[id] ? books[id].title : '',
-        author: books[id] ? books[id].author : '',
-        genre: books[id] ? books[id].genre : '',
-        yearWritten: books[id] ? books[id].yearWritten : '',
-        edition: books[id] ? books[id].edition : '',
-        binding: books[id] ? books[id].binding : '',
-        condition: books[id] ? books[id].condition : '',
-        price: books[id] ? `$${books[id].price}` : ''
+        title: books[bookId] ? books[bookId].title : '',
+        author: books[bookId] ? books[bookId].author : '',
+        genre: books[bookId] ? books[bookId].genre : '',
+        yearWritten: books[bookId] ? books[bookId].yearWritten : '',
+        edition: books[bookId] ? books[bookId].edition : '',
+        binding: books[bookId] ? books[bookId].binding : '',
+        condition: books[bookId] ? books[bookId].condition : '',
+        price: books[bookId] ? `$${books[bookId].price}` : ''
     });
 
 

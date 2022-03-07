@@ -39,7 +39,7 @@ const createBook = async (book) => {
 }
 
 const updateBook = async (book) => {
-    const url = `http://localhost:8080/books/${book.id}`;
+    const url = `http://localhost:8080/books/${book.bookId}`;
     const init = {
         method: PUT,
         headers: {
