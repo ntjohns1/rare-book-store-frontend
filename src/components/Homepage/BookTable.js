@@ -11,9 +11,11 @@ export default function BookTable() {
               .then(response => response.json())
               .then(result => setBooks(result))
               .catch(console.log);
+              ;
       }, []);
 
-    console.log(books);
+      console.log({...books});
+
 
     function goToBook(id) {
         document.location.replace(`/book/${id}`);
@@ -37,10 +39,10 @@ export default function BookTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {books.map((book) => (
+                    {books.map((book, index) => (
                         // <tr onClick={() => goToSingleBook(book._id)}
                         <tr onClick={() => goToBook(book.id)} key={book.id}>
-                            <td>{book.id}</td>
+                            <td>{index}</td>
                             <td>{book.title}</td>
                             <td>{book.author}</td>
                             <td>{book.genre}</td>
