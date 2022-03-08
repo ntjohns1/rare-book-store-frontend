@@ -1,22 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
-import books from '../../util/bookSeeds'
 
-export default function SingleBook() {
+export default function SingleBook({ book }) {
     const id = useParams().id;
+
+    console.log({...book});
+
+    // const [book, setBook] = useState([]);
+
+    // useEffect(() => {
+    //     fetch(`http://localhost:8080/book/${id}`)
+    //             .then(response => response.json())
+    //             .then(result => setBook(result))
+    //             .catch(console.log);
+    //     }, [id]);
+  
 
     // form input to add Customer
     const [formState, setFormState] = useState({
-        title: books[id] ? books[id].title : '',
-        author: books[id] ? books[id].author : '',
-        genre: books[id] ? books[id].genre : '',
-        yearWritten: books[id] ? books[id].yearWritten : '',
-        edition: books[id] ? books[id].edition : '',
-        binding: books[id] ? books[id].binding : '',
-        bookCondition: books[id] ? books[id].bookCondition : '',
-        price: books[id] ? `$${books[id].price}` : ''
+        title: book? book.title : '',
+        author: book ? book.author : '',
+        genre: book ? book.genre : '',
+        yearWritten: book ? book.yearWritten : '',
+        edition: book ? book.edition : '',
+        binding: book ? book.binding : '',
+        bookCondition: book ? book[id].bookCondition : '',
+        // price: book[id] ? `$${book[id].price}` : '',
+        price:''
     });
 
 
@@ -33,43 +45,50 @@ export default function SingleBook() {
         });
     };
 
-    // submit form
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        const {
-            title,
-            author,
-            genre,
-            yearWritten,
-            edition,
-            binding,
-            bookCondition,
-            price
-        } = formState;
-        try {
-            //  await addUser({
-            //     variables: { 
-            //         username: username,
-            //         email: email,
-            //         password: password
-            //      },
-            // });
-            alert("You Did It!");
-        } catch (e) {
-            console.error(e);
-        }
-        setFormState({
-            title,
-            author,
-            genre,
-            yearWritten,
-            edition,
-            binding,
-            bookCondition,
-            price
-        });
-    };
+    function handleSubmit(evt) {
+        evt.preventDefault();
 
+        console.log(formState);
+
+        const url = `http://localhost:8080/book/${id}`;
+        const method = "PUT";
+        const expectedStatus = 204;
+
+        const init = {
+            method,
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(formState)
+        };
+
+        fetch(url, init)
+            .then(response => {
+                if (response.status === expectedStatus) {
+                    return formState;
+                }
+                return Promise.reject(`Didn't receive expected status: ${expectedStatus}`);
+            })
+            .then((data) => {
+                console.log('/addBook: ', data);
+                alert(`${data.title} added to Books`);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        // setFormState({
+        //     formState.title,
+        //     author,
+        //     genre,
+        //     yearWritten,
+        //     edition,
+        //     binding,
+        //     bookCondition,
+        //     price
+        // });
+
+    }
     function goBack() {
         document.location.replace(`/`);
     }
@@ -106,7 +125,7 @@ export default function SingleBook() {
                                             </Card.Title>
                                     </Card.Header>
                                     <Card.Body>
-                                        <Form onSubmit={handleFormSubmit}>
+                                        <Form onSubmit={handleSubmit}>
                                             <Row>
                                                 <Col className="px-1" md="6">
                                                     <Form.Group>
