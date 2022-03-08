@@ -55,7 +55,6 @@ export default function SingleBook() {
 
         const url = `http://localhost:8080/book/${id}`;
         const method = "PUT";
-        const expectedStatus = 204;
 
         const init = {
             method,
@@ -78,6 +77,13 @@ export default function SingleBook() {
                 console.error('Error:', error);
             });
     }
+
+    function handleDelete() {
+        fetch(`http://localhost:8080/books/${id}`, { method: "DELETE" })
+            .then(() => alert(`${book.title} Deleted`))
+            .catch(error => console.log(error));
+    }
+
     function goBack() {
         document.location.replace(`/`);
     }
@@ -223,6 +229,8 @@ export default function SingleBook() {
                                                     <Button
                                                         className="btn-round mx-3"
                                                         variant="danger"
+                                                        onClick={() => handleDelete()}
+
                                                     >
                                                         Delete Book
                                                     </Button>
