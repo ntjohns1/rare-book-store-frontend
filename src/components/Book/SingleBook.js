@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
+import books from '../../util/bookSeeds'
 
-export default function AddBook() {
+export default function SingleBook() {
+    const id = useParams().id - 1;
+
     // form input to add Customer
     const [formState, setFormState] = useState({
-        title: '',
-        author: '',
-        genre: '',
-        yearWritten: '',
-        edition: '',
-        binding: '',
-        bookCondition: '',
-        price: ''
+        title: books[id] ? books[id].title : '',
+        author: books[id] ? books[id].author : '',
+        genre: books[id] ? books[id].genre : '',
+        yearWritten: books[id] ? books[id].yearWritten : '',
+        edition: books[id] ? books[id].edition : '',
+        binding: books[id] ? books[id].binding : '',
+        bookCondition: books[id] ? books[id].bookCondition : '',
+        price: books[id] ? `$${books[id].price}` : ''
     });
 
 
@@ -97,7 +100,10 @@ export default function AddBook() {
                             <Col md="8">
                                 <Card className="card-user">
                                     <Card.Header>
-                                        <Card.Title tag="h5">Add Book</Card.Title>
+                                        <Card.Title tag="h5">
+                                            {formState.title} <br/>
+                                            <small>{formState.author}</small>
+                                            </Card.Title>
                                     </Card.Header>
                                     <Card.Body>
                                         <Form onSubmit={handleFormSubmit}>
@@ -127,7 +133,7 @@ export default function AddBook() {
                                                 </Col>
                                             </Row>
                                             <Row>
-                                               <Col className="pr-1" md="4">
+                                                <Col className="pr-1" md="4">
                                                     <Form.Group>
                                                         <label>Genre</label>
                                                         <Form.Control
@@ -204,10 +210,16 @@ export default function AddBook() {
                                                         color="primary"
                                                         type="submit"
                                                     >
-                                                        Add Book
+                                                        Update Book
                                                     </Button>
                                                     <Button
                                                         className="btn-round mx-3"
+                                                        variant="danger"
+                                                    >
+                                                        Delete Book
+                                                    </Button>
+                                                    <Button
+                                                        className="btn-round ml-3"
                                                         variant="secondary"
                                                         onClick={() => goBack()}
                                                     >
