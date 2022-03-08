@@ -30,6 +30,41 @@ export default function AddBook() {
         });
     };
 
+    function handleSubmit(evt) {
+        evt.preventDefault();
+
+        console.log(formState);
+
+        const url = "http://localhost:8080/books";
+        const method = "POST";
+        const expectedStatus = 201;
+
+        const init = {
+            method,
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(formState)
+        };
+
+        fetch(url, init)
+            .then(response => {
+                if (response.status === expectedStatus) {
+                    return response.json();
+                }
+                return Promise.reject(`Didn't receive expected status: ${expectedStatus}`);
+            })
+            .then((data) => {
+                console.log('/addBook: ', data);
+                alert(`${data.title} added to Books`);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+
+    }
+
     // submit form
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -79,7 +114,7 @@ export default function AddBook() {
                 </Col>
                 <Col md="11">
                     <div className="content">
-                    <Row className='m-3'>
+                        <Row className='m-3'>
                             <Col md="4">
                                 <Card className="card-user">
                                     <Card.Body>
@@ -100,7 +135,7 @@ export default function AddBook() {
                                         <Card.Title tag="h5">Add Book</Card.Title>
                                     </Card.Header>
                                     <Card.Body>
-                                        <Form onSubmit={handleFormSubmit}>
+                                        <Form onSubmit={handleSubmit}>
                                             <Row>
                                                 <Col className="px-1" md="6">
                                                     <Form.Group>
@@ -127,7 +162,7 @@ export default function AddBook() {
                                                 </Col>
                                             </Row>
                                             <Row>
-                                               <Col className="pr-1" md="4">
+                                                <Col className="pr-1" md="4">
                                                     <Form.Group>
                                                         <label>Genre</label>
                                                         <Form.Control
