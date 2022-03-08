@@ -3,33 +3,36 @@ import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
 
-export default function SingleBook({ book }) {
+export default function SingleBook() {
     const id = useParams().id;
 
-    console.log({...book});
+    const [book, setBook] = useState({});
 
-    // const [book, setBook] = useState([]);
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:8080/book/${id}`)
-    //             .then(response => response.json())
-    //             .then(result => setBook(result))
-    //             .catch(console.log);
-    //     }, [id]);
-  
+    useEffect(() => {
+        fetch(`http://localhost:8080/book/${id}`)
+            .then(response => response.json())
+            .then(result =>
+                setBook(result))
+            .catch(console.log)
+    }, []);
+    useEffect(() => {
+        setFormState({ ...book })
+    }, [book]);
 
     // form input to add Customer
     const [formState, setFormState] = useState({
-        title: book? book.title : '',
+        title: book ? book.title : '',
         author: book ? book.author : '',
         genre: book ? book.genre : '',
         yearWritten: book ? book.yearWritten : '',
         edition: book ? book.edition : '',
         binding: book ? book.binding : '',
-        bookCondition: book ? book[id].bookCondition : '',
+        bookCondition: book ? book.bookCondition : '',
         // price: book[id] ? `$${book[id].price}` : '',
-        price:''
+        price: ''
     });
+
+
 
 
     // let address = { ...customer.address }
@@ -101,7 +104,7 @@ export default function SingleBook({ book }) {
                 </Col>
                 <Col md="11">
                     <div className="content">
-                    <Row className='m-3'>
+                        <Row className='m-3'>
                             <Col md="4">
                                 <Card className="card-user">
                                     <Card.Body>
@@ -120,9 +123,9 @@ export default function SingleBook({ book }) {
                                 <Card className="card-user">
                                     <Card.Header>
                                         <Card.Title tag="h5">
-                                            {formState.title} <br/>
-                                            <small>{formState.author}</small>
-                                            </Card.Title>
+                                            {book.title} <br />
+                                            <small>{book.author}</small>
+                                        </Card.Title>
                                     </Card.Header>
                                     <Card.Body>
                                         <Form onSubmit={handleSubmit}>
@@ -132,7 +135,7 @@ export default function SingleBook({ book }) {
                                                         <label>Title</label>
                                                         <Form.Control
                                                             name="title"
-                                                            value={formState.title}
+                                                            value={formState.title ? formState.title : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -145,7 +148,7 @@ export default function SingleBook({ book }) {
                                                         </label>
                                                         <Form.Control
                                                             name="author"
-                                                            value={formState.author}
+                                                            value={formState.author ? formState.author : ""}
                                                             onChange={handleChange}
                                                             type="text" />
                                                     </Form.Group>
@@ -157,7 +160,7 @@ export default function SingleBook({ book }) {
                                                         <label>Genre</label>
                                                         <Form.Control
                                                             name="genre"
-                                                            value={formState.genre}
+                                                            value={formState.genre ? formState.genre : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -168,7 +171,7 @@ export default function SingleBook({ book }) {
                                                         <label>Year Written</label>
                                                         <Form.Control
                                                             name="yearWritten"
-                                                            value={formState.yearWritten}
+                                                            value={formState.yearWritten ? formState.yearWritten : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -179,7 +182,7 @@ export default function SingleBook({ book }) {
                                                         <label>Edition</label>
                                                         <Form.Control
                                                             name="edition"
-                                                            value={formState.edition}
+                                                            value={formState.edition ? formState.edition : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -192,7 +195,7 @@ export default function SingleBook({ book }) {
                                                         <label>Binding</label>
                                                         <Form.Control
                                                             name="binding"
-                                                            value={formState.binding}
+                                                            value={formState.binding ? formState.binding : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -204,7 +207,7 @@ export default function SingleBook({ book }) {
                                                         <label>Condition</label>
                                                         <Form.Control
                                                             name="bookCondition"
-                                                            value={formState.bookCondition}
+                                                            value={formState.bookCondition ? formState.bookCondition : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -215,7 +218,7 @@ export default function SingleBook({ book }) {
                                                         <label>Price</label>
                                                         <Form.Control
                                                             name="price"
-                                                            value={formState.price}
+                                                            value={formState.price ? formState.price : ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
