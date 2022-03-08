@@ -1,12 +1,25 @@
-const getAllBooks = async () => {
-    try {
-        const url = 'http://localhost:8080/books/';
-        let response = await fetch((url))
-        return await response.json()
-    } catch (err) {
-        console.log(err)
-    }
-};
+// const getAllBooks = async () => {
+//     try {
+//         const url = 'http://localhost:8080/books/';
+//         let response = await fetch((url))
+//         return await response.json()
+//     } catch (err) {
+//         console.log(err)
+//     }
+// };
+
+
+// const booksFetch = fetch('http://localhost:8080/books/')
+//   .then((response) => response.json())
+//   .then((books) => {
+//     return books;
+//   });
+
+// const getAllBooks = () => {
+//   booksFetch.then((a) => {
+//     console.log(a);
+//   });
+// };
 
 const getOneBook = async (id) => {
     try {
@@ -21,7 +34,7 @@ const getOneBook = async (id) => {
 const createBook = async (book) => {
     const url = 'http://localhost:8080/books/';
     const init = {
-        method: POST,
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
@@ -39,9 +52,9 @@ const createBook = async (book) => {
 }
 
 const updateBook = async (book) => {
-    const url = `http://localhost:8080/books/${book.bookId}`;
+    const url = `http://localhost:8080/books/${book.id}`;
     const init = {
-        method: PUT,
+        method: "PUT",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
@@ -69,7 +82,7 @@ const deleteBook = async (id) => {
     try {
         let response = await fetch((url, { method: "DELETE" }))
         console.log(response);
-        return book;
+        return response.json();
     } catch (err) {
         console.log(err)
     }
@@ -78,8 +91,8 @@ const deleteBook = async (id) => {
 
 
 
-export default { 
-    getAllBooks, 
+export { 
+    // getAllBooks, 
     getOneBook, 
     createBook, 
     updateBook, 

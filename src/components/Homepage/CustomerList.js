@@ -1,4 +1,3 @@
-impo
 import { Card, Toast } from 'react-bootstrap';
 import customers from '../../util/UserSeeds';
 

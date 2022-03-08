@@ -62,9 +62,9 @@ VALUES
   ("P.O. Box 642","Paradise",NULL,"CT","57920","(675) 272-0143"),
   ("3135 A Rd.",NULL,"Idaho Falls","KS","51228","(879) 278-2338"),
   ("5656 Interdum Rd.",NULL,"Gaithersburg","MI","71627","(842) 573-3132"),
-  ("8901 Pellentesque Rd.",NULL,"Dover","IL","38244","(732) 227-9562");
-INSERT INTO `address` (`street`,`city`,`state`,`zipcode`,`phone`)
-VALUES
+  ("8901 Pellentesque Rd.",NULL,"Dover","IL","38244","(732) 227-9562"),
+-- INSERT INTO `address` (`street1`,`street2`,`city`,`state`,`zipcode`,`phone`)
+-- VALUES
   ("2629 Augue Rd.","Apt. 130","Aurora","OK","66032","(784) 757-2100"),
   ("1781 Aliquam St.","Apt. 822","Hartford","OH","36128","(543) 384-5678"),
   ("8048 Vestibulum Rd.",NULL,"New Orleans","OR","71236","(226) 877-0892"),
@@ -97,7 +97,7 @@ VALUES
   ("8673 Proin Ave.","Apt. D8 ","Worcester","CA","60209","(884) 752-6845"),
   ("4263 In Ave.","Apt. 87","Chandler","ID","53581","(693) 382-4361"),
   ("410 Nunc. Ave",NULL,"Lexington","MO","95854","(213) 565-2425"),
-  ("448 Et St." "Apt. G17","Rochester","MD","44466","(312) 818-5479"),
+  ("448 Et St.", "Apt. G17","Rochester","MD","44466","(312) 818-5479"),
   ("9499 Tincidunt Rd.", NULL,"Duluth","KS","21767","(372) 471-1987"),
   ("5842 Hendrerit Rd.", NULL,"Provo","CT","45528","(120) 782-0697"),
   ("6440 Sed, Ave.","Apt. 359","Fayetteville","AZ","61663","(986) 423-1317"),

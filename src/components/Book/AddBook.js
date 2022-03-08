@@ -12,7 +12,7 @@ export default function AddBook() {
         yearWritten: '',
         edition: '',
         binding: '',
-        condition: '',
+        bookCondition: '',
         price: ''
     });
 
@@ -40,7 +40,7 @@ export default function AddBook() {
             yearWritten,
             edition,
             binding,
-            condition,
+            bookCondition,
             price
         } = formState;
         try {
@@ -62,7 +62,7 @@ export default function AddBook() {
             yearWritten,
             edition,
             binding,
-            condition,
+            bookCondition,
             price
         });
     };
@@ -178,8 +178,8 @@ export default function AddBook() {
                                                     <Form.Group>
                                                         <label>Condition</label>
                                                         <Form.Control
-                                                            name="condition"
-                                                            value={formState.condition}
+                                                            name="bookCondition"
+                                                            value={formState.bookCondition}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />

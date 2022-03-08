@@ -5,18 +5,18 @@ import Sidebar from '../Sidebar';
 import books from '../../util/bookSeeds'
 
 export default function SingleBook() {
-    const id = useParams().bookId - 1;
+    const id = useParams().id - 1;
 
     // form input to add Customer
     const [formState, setFormState] = useState({
-        title: books[bookId] ? books[bookId].title : '',
-        author: books[bookId] ? books[bookId].author : '',
-        genre: books[bookId] ? books[bookId].genre : '',
-        yearWritten: books[bookId] ? books[bookId].yearWritten : '',
-        edition: books[bookId] ? books[bookId].edition : '',
-        binding: books[bookId] ? books[bookId].binding : '',
-        condition: books[bookId] ? books[bookId].condition : '',
-        price: books[bookId] ? `$${books[bookId].price}` : ''
+        title: books[id] ? books[id].title : '',
+        author: books[id] ? books[id].author : '',
+        genre: books[id] ? books[id].genre : '',
+        yearWritten: books[id] ? books[id].yearWritten : '',
+        edition: books[id] ? books[id].edition : '',
+        binding: books[id] ? books[id].binding : '',
+        bookCondition: books[id] ? books[id].bookCondition : '',
+        price: books[id] ? `$${books[id].price}` : ''
     });
 
 
@@ -43,7 +43,7 @@ export default function SingleBook() {
             yearWritten,
             edition,
             binding,
-            condition,
+            bookCondition,
             price
         } = formState;
         try {
@@ -65,7 +65,7 @@ export default function SingleBook() {
             yearWritten,
             edition,
             binding,
-            condition,
+            bookCondition,
             price
         });
     };
@@ -184,8 +184,8 @@ export default function SingleBook() {
                                                     <Form.Group>
                                                         <label>Condition</label>
                                                         <Form.Control
-                                                            name="condition"
-                                                            value={formState.condition}
+                                                            name="bookCondition"
+                                                            value={formState.bookCondition}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />

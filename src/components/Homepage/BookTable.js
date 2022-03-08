@@ -1,8 +1,22 @@
+import { useEffect, useState } from "react";
 import { Card, Table } from "react-bootstrap"
-import books from "../../util/bookSeeds"
+// import books from "../../util/bookSeeds"
+// import { booksFetch, getAllBooks } from "../Book/api-book"
 export default function BookTable() {
-    function goToBook(bookId) {
-        document.location.replace(`/book/${bookId}`);
+    const [books, setBooks] = useState([]);
+
+    // let books = getAllBooks();
+    useEffect(() => {
+      fetch("http://localhost:8080/books")
+              .then(response => response.json())
+              .then(result => setBooks(result))
+              .catch(console.log);
+      }, []);
+
+    console.log(books);
+
+    function goToBook(id) {
+        document.location.replace(`/book/${id}`);
     }
     return (
             <Card bg="dark">
@@ -25,15 +39,15 @@ export default function BookTable() {
                 <tbody>
                     {books.map((book) => (
                         // <tr onClick={() => goToSingleBook(book._id)}
-                        <tr onClick={() => goToBook(book.bookId)} key={book.bookId}>
-                            <td>{book.bookId}</td>
+                        <tr onClick={() => goToBook(book.id)} key={book.id}>
+                            <td>{book.id}</td>
                             <td>{book.title}</td>
                             <td>{book.author}</td>
                             <td>{book.genre}</td>
                             <td>{book.yearWritten}</td>
                             <td>{book.edition}</td>
                             <td>{book.binding}</td>
-                            <td>{book.condition}</td>
+                            <td>{book.bookCondition}</td>
                             <td>${book.price}</td>
                         </tr>
                     ))}

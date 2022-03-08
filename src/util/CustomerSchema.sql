@@ -1,3 +1,6 @@
+create schema if not exists rare_bookstore;
+use rare_bookstore;
+
 DROP TABLE IF EXISTS `customer`;
 
 CREATE TABLE `customer` (
