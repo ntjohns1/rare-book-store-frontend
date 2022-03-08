@@ -17,6 +17,7 @@ export default function SingleBook() {
     }, []);
     useEffect(() => {
         setFormState({ ...book })
+        console.log(formState);
     }, [book]);
 
     // form input to add Customer
@@ -28,8 +29,7 @@ export default function SingleBook() {
         edition: book ? book.edition : '',
         binding: book ? book.binding : '',
         bookCondition: book ? book.bookCondition : '',
-        // price: book[id] ? `$${book[id].price}` : '',
-        price: ''
+        price: book[id] ? `$${book[id].price}` : '',
     });
 
 
@@ -68,29 +68,15 @@ export default function SingleBook() {
 
         fetch(url, init)
             .then(response => {
-                if (response.status === expectedStatus) {
                     return formState;
-                }
-                return Promise.reject(`Didn't receive expected status: ${expectedStatus}`);
             })
             .then((data) => {
                 console.log('/addBook: ', data);
-                alert(`${data.title} added to Books`);
+                alert(`${data.title} successfully updated`);
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
-        // setFormState({
-        //     formState.title,
-        //     author,
-        //     genre,
-        //     yearWritten,
-        //     edition,
-        //     binding,
-        //     bookCondition,
-        //     price
-        // });
-
     }
     function goBack() {
         document.location.replace(`/`);
@@ -135,7 +121,7 @@ export default function SingleBook() {
                                                         <label>Title</label>
                                                         <Form.Control
                                                             name="title"
-                                                            value={formState.title ? formState.title : ""}
+                                                            value={formState.title ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -148,7 +134,7 @@ export default function SingleBook() {
                                                         </label>
                                                         <Form.Control
                                                             name="author"
-                                                            value={formState.author ? formState.author : ""}
+                                                            value={formState.author ?? ""}
                                                             onChange={handleChange}
                                                             type="text" />
                                                     </Form.Group>
@@ -160,7 +146,7 @@ export default function SingleBook() {
                                                         <label>Genre</label>
                                                         <Form.Control
                                                             name="genre"
-                                                            value={formState.genre ? formState.genre : ""}
+                                                            value={formState.genre ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -171,7 +157,7 @@ export default function SingleBook() {
                                                         <label>Year Written</label>
                                                         <Form.Control
                                                             name="yearWritten"
-                                                            value={formState.yearWritten ? formState.yearWritten : ""}
+                                                            value={formState.yearWritten ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -182,7 +168,7 @@ export default function SingleBook() {
                                                         <label>Edition</label>
                                                         <Form.Control
                                                             name="edition"
-                                                            value={formState.edition ? formState.edition : ""}
+                                                            value={formState.edition ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -195,7 +181,7 @@ export default function SingleBook() {
                                                         <label>Binding</label>
                                                         <Form.Control
                                                             name="binding"
-                                                            value={formState.binding ? formState.binding : ""}
+                                                            value={formState.binding ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -207,7 +193,7 @@ export default function SingleBook() {
                                                         <label>Condition</label>
                                                         <Form.Control
                                                             name="bookCondition"
-                                                            value={formState.bookCondition ? formState.bookCondition : ""}
+                                                            value={formState.bookCondition ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -218,7 +204,7 @@ export default function SingleBook() {
                                                         <label>Price</label>
                                                         <Form.Control
                                                             name="price"
-                                                            value={formState.price ? formState.price : ""}
+                                                            value={formState.price ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
