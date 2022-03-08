@@ -1,11 +1,8 @@
 // const getAllBooks = async () => {
-//     try {
-//         const url = 'http://localhost:8080/books/';
-//         let response = await fetch((url))
-//         return await response.json()
-//     } catch (err) {
-//         console.log(err)
-//     }
+//     fetch("http://localhost:8080/books")
+//     .then(response => response.json())
+//     .then(result => setBooks(result))
+//     .catch(console.log);
 // };
 
 

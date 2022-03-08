@@ -13,7 +13,8 @@ export default function BookTable() {
               .catch(console.log);
       }, []);
 
-    console.log(books);
+      console.log({...books});
+
 
     function goToBook(id) {
         document.location.replace(`/book/${id}`);
@@ -37,9 +38,9 @@ export default function BookTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {books.map((book) => (
+                    {books.map((book, index) => (
                         // <tr onClick={() => goToSingleBook(book._id)}
-                        <tr onClick={() => goToBook(book.id)} key={book.id}>
+                        <tr onClick={() => goToBook(index)} key={index}>
                             <td>{book.id}</td>
                             <td>{book.title}</td>
                             <td>{book.author}</td>

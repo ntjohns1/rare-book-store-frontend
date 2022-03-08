@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar';
 import books from '../../util/bookSeeds'
 
 export default function SingleBook() {
-    const id = useParams().id - 1;
+    const id = useParams().id;
 
     // form input to add Customer
     const [formState, setFormState] = useState({
