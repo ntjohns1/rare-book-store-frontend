@@ -6,21 +6,17 @@ import Sidebar from '../Sidebar';
 export default function AddCustomer() {
     // form input to add Customer
     const [formState, setFormState] = useState({
+        email: '',
+        firstName: '',
+        lastName: '',
         street1: '',
         street2: '',
         city: '',
         state: '',
         zipcode: '',
-        email: '',
-        firstName: '',
-        lastName: '',
         phone: '',
         vip: '',
     });
-
-
-    // let address = { ...customer.address }
-    // console.log(address);
 
     // update state based on form input changes
     const handleChange = (event) => {
@@ -71,21 +67,23 @@ export default function AddCustomer() {
             })
             .then((data) => {
                 console.log('/addCustomer: ', data);
-                alert(`${data.title} added to Customers`);
+                alert(`${data.firstName} ${data.lastName} added to Customers`);
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
-        // setFormState({
-        //     title,
-        //     author,
-        //     genre,
-        //     yearWritten,
-        //     edition,
-        //     binding,
-        //     bookCondition,
-        //     price
-        // });
+        setFormState({
+            email: '',
+            firstName: '',
+            lastName: '',
+            street1: '',
+            street2: '',
+            city: '',
+            state: '',
+            zipcode: '',
+            phone: '',
+            vip: '',
+        });
 
     }
 

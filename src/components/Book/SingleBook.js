@@ -32,12 +32,6 @@ export default function SingleBook() {
         price: book[id] ? `$${book[id].price}` : '',
     });
 
-
-
-
-    // let address = { ...customer.address }
-    // console.log(address);
-
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -70,7 +64,7 @@ export default function SingleBook() {
                     return formState;
             })
             .then((data) => {
-                console.log('/addBook: ', data);
+                console.log('/updateBook: ', data);
                 alert(`${data.title} successfully updated`);
             })
             .catch((error) => {

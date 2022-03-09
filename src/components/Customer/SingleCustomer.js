@@ -1,85 +1,104 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
-import customers from '../../util/UserSeeds';
-import address from '../../util/AddressSeeds'
+// import customers from '../../util/UserSeeds';
+// import address from '../../util/AddressSeeds'
 
 export default function SingleCustomer() {
-    const id = useParams().customerId - 1;
+    const id = useParams().customerId;
 
-    // form input to add Customer
+    const [customer, setCustomer] = useState({});
+
+    useEffect(() => {
+        fetch(`http://localhost:8080/customer/${id}`)
+            .then(response => response.json())
+            .then(result =>
+                setCustomer(result))
+            .catch(console.log)
+            console.log(customer);
+    }, []);
+    useEffect(() => {
+        setFormState({ 
+            ...customer,
+            ...customer.address,
+         })
+    }, [customer]);
+    
+    
+    
+    // form input to update Customer
     const [formState, setFormState] = useState({
-        firstName: customers[id] ? customers[id].firstName : '',
-        lastName: customers[id] ? customers[id].lastName : '',
-        username: customers[id] ? customers[id].username : '',
-        email: customers[id] ? customers[id].email : '',
-        street1: address[id] ? address[id].street1 : '',
-        street2: address[id] ? address[id].street2 : '',
-        city: address[id] ? address[id].city : '',
-        state: address[id] ? address[id].state : '',
-        zipcode: address[id] ? address[id].zipcode : '',
-        phone: address[id] ? address[id].phone : '',
-        rewardsLevel: customers[id] ? customers[id].rewardsLevel : '',
+        ...customer,
+        ...customer.address,
     });
-
+    
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
-
+        
         setFormState({
             ...formState,
             [name]: value,
         });
     };
 
-    // submit form
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        const {
-            firstName,
-            lastName,
-            username,
-            email,
-            street1,
-            street2,
-            city,
-            state,
-            zipcode,
-            phone,
-            rewardsLevel,
-        } = formState;
-        try {
-            //  await addUser({
-            //     variables: { 
-            //         username: username,
-            //         email: email,
-            //         password: password
-            //      },
-            // });
-            alert("You Did It!");
-        } catch (e) {
-            console.error(e);
-        }
-        setFormState({
-            firstName,
-            lastName,
-            username,
-            email,
-            street1,
-            street2,
-            city,
-            state,
-            zipcode,
-            phone,
-            rewardsLevel,
+function handleSubmit(evt) {
+    evt.preventDefault();
+
+    console.log(formState);
+
+    const url = `http://localhost:8080/customers/${id}`;
+    const method = "PUT";
+
+    const init = {
+        method,
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(
+            {
+                "id": id,
+                "firstName": formState.firstName,
+                "lastName":  formState.lastName,
+                "email": formState.email,
+                "phone": formState.phone,
+                "address": {
+                    "street1": formState.street1,
+                    "street2": formState.street2,
+                    "city": formState.city,
+                    "state": formState.state,
+                    "zipcode": formState.zipcode
+                },
+                "vip": formState.vip
+            }
+        )
+};
+
+    fetch(url, init)
+        .then(response => {
+                return formState;
+        })
+        .then((data) => {
+            console.log('/updateCustomer: ', data);
+            alert(`${data.firstName} successfully updated`);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
         });
-    };
+}
 
-    function goBack() {
-        document.location.replace(`/`);
-    }
+function handleDelete() {
+    fetch(`http://localhost:8080/customers/${id}`, { method: "DELETE" })
+        .then(() => alert(`${customer.firstName} Deleted`))
+        .then(goBack())
+        .catch(error => console.log(error));
+}
 
+function goBack() {
+    document.location.replace(`/`);
+}
     return (
         <Container fluid>
             <Row >
@@ -108,19 +127,8 @@ export default function SingleCustomer() {
                                     <Card.Title tag="h5">{formState.firstName} {formState.lastName}</Card.Title>
                                 </Card.Header>
                                 <Card.Body>
-                                    <Form onSubmit={handleFormSubmit}>
+                                    <Form onSubmit={handleSubmit}>
                                         <Row>
-                                            <Col className="px-1" md="6">
-                                                <Form.Group>
-                                                    <label>Username</label>
-                                                    <Form.Control
-                                                        name="username"
-                                                        value={formState.username}
-                                                        onChange={handleChange}
-                                                        type="text"
-                                                    />
-                                                </Form.Group>
-                                            </Col>
                                             <Col className="pl-1" md="6">
                                                 <Form.Group>
                                                     <label htmlFor="exampleInputEmail1">
@@ -128,7 +136,7 @@ export default function SingleCustomer() {
                                                     </label>
                                                     <Form.Control
                                                         name="email"
-                                                        value={formState.email}
+                                                        value={formState.email ?? ""}
                                                         onChange={handleChange}
                                                         type="email" />
                                                 </Form.Group>
@@ -140,7 +148,7 @@ export default function SingleCustomer() {
                                                     <label>First Name</label>
                                                     <Form.Control
                                                         name="firstName"
-                                                        value={formState.firstName}
+                                                        value={formState.firstName ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -151,7 +159,7 @@ export default function SingleCustomer() {
                                                     <label>Last Name</label>
                                                     <Form.Control
                                                         name="lastName"
-                                                        value={formState.lastName}
+                                                        value={formState.lastName ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -164,7 +172,7 @@ export default function SingleCustomer() {
                                                     <label>Address</label>
                                                     <Form.Control
                                                         name="street1"
-                                                        value={formState.street1}
+                                                        value={formState.street1 ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -177,7 +185,7 @@ export default function SingleCustomer() {
                                                     <label>Address 2</label>
                                                     <Form.Control
                                                         name="street2"
-                                                        value={formState.street2}
+                                                        value={formState.street2 ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -190,7 +198,7 @@ export default function SingleCustomer() {
                                                     <label>City</label>
                                                     <Form.Control
                                                         name="city"
-                                                        value={formState.city}
+                                                        value={formState.city ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -201,7 +209,7 @@ export default function SingleCustomer() {
                                                     <label>State</label>
                                                     <Form.Control
                                                         name="state"
-                                                        value={formState.state}
+                                                        value={formState.state ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -212,7 +220,7 @@ export default function SingleCustomer() {
                                                     <label>Zip Code</label>
                                                     <Form.Control
                                                         name="zipcode"
-                                                        value={formState.zipcode}
+                                                        value={formState.zipcode ?? ""}
                                                         onChange={handleChange}
                                                         type="text" />
                                                 </Form.Group>
@@ -224,7 +232,7 @@ export default function SingleCustomer() {
                                                     <label>Phone</label>
                                                     <Form.Control
                                                         name="phone"
-                                                        value={formState.phone}
+                                                        value={formState.phone ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -234,8 +242,8 @@ export default function SingleCustomer() {
                                                 <Form.Group>
                                                     <label>Rewards Level</label>
                                                     <Form.Control
-                                                        name="rewardsLevel"
-                                                        value={formState.rewardsLevel}
+                                                        name="vip"
+                                                        value={formState.vip ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -254,7 +262,7 @@ export default function SingleCustomer() {
                                                 <Button
                                                     className="btn-round mx-3"
                                                     variant="danger"
-                                                    onClick={() => goBack()}
+                                                    onClick={() => handleDelete()}
                                                 >
                                                     Delete Customer
                                                 </Button>
