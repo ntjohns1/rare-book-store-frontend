@@ -62,6 +62,16 @@ export default function AddBook() {
             .catch((error) => {
                 console.error('Error:', error);
             });
+        // setFormState({
+        //     title,
+        //     author,
+        //     genre,
+        //     yearWritten,
+        //     edition,
+        //     binding,
+        //     bookCondition,
+        //     price
+        // });
 
     }
 
@@ -90,16 +100,7 @@ export default function AddBook() {
         } catch (e) {
             console.error(e);
         }
-        setFormState({
-            title,
-            author,
-            genre,
-            yearWritten,
-            edition,
-            binding,
-            bookCondition,
-            price
-        });
+
     };
 
     function goBack() {

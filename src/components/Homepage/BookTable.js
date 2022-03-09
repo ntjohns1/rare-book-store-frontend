@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, Table } from "react-bootstrap"
+import BookRow from "./BookRow";
 // import books from "../../util/bookSeeds"
 // import { booksFetch, getAllBooks } from "../Book/api-book"
 export default function BookTable() {
@@ -12,13 +13,6 @@ export default function BookTable() {
               .then(result => setBooks(result))
               .catch(console.log);
       }, []);
-
-      console.log({...books});
-
-
-    function goToBook(id) {
-        document.location.replace(`/book/${id}`);
-    }
     return (
             <Card bg="dark">
                 <Card.Title className="text-center pt-2 text-white"><h3>Book Inventory</h3></Card.Title>
@@ -40,17 +34,7 @@ export default function BookTable() {
                 <tbody>
                     {books.map((book, index) => (
                         // <tr onClick={() => goToSingleBook(book._id)}
-                        <tr onClick={() => goToBook(index)} key={index}>
-                            <td>{book.id}</td>
-                            <td>{book.title}</td>
-                            <td>{book.author}</td>
-                            <td>{book.genre}</td>
-                            <td>{book.yearWritten}</td>
-                            <td>{book.edition}</td>
-                            <td>{book.binding}</td>
-                            <td>{book.bookCondition}</td>
-                            <td>${book.price}</td>
-                        </tr>
+                        <BookRow key={book.id} book={book} />
                     ))}
                 </tbody>
             </Table>

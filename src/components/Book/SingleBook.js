@@ -1,23 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
-import books from '../../util/bookSeeds'
 
 export default function SingleBook() {
     const id = useParams().id;
 
+    const [book, setBook] = useState({});
+
+    useEffect(() => {
+        fetch(`http://localhost:8080/book/${id}`)
+            .then(response => response.json())
+            .then(result =>
+                setBook(result))
+            .catch(console.log)
+    }, []);
+    useEffect(() => {
+        setFormState({ ...book })
+        console.log(formState);
+    }, [book]);
+
     // form input to add Customer
     const [formState, setFormState] = useState({
-        title: books[id] ? books[id].title : '',
-        author: books[id] ? books[id].author : '',
-        genre: books[id] ? books[id].genre : '',
-        yearWritten: books[id] ? books[id].yearWritten : '',
-        edition: books[id] ? books[id].edition : '',
-        binding: books[id] ? books[id].binding : '',
-        bookCondition: books[id] ? books[id].bookCondition : '',
-        price: books[id] ? `$${books[id].price}` : ''
+        title: book ? book.title : '',
+        author: book ? book.author : '',
+        genre: book ? book.genre : '',
+        yearWritten: book ? book.yearWritten : '',
+        edition: book ? book.edition : '',
+        binding: book ? book.binding : '',
+        bookCondition: book ? book.bookCondition : '',
+        price: book[id] ? `$${book[id].price}` : '',
     });
+
+
 
 
     // let address = { ...customer.address }
@@ -33,42 +48,41 @@ export default function SingleBook() {
         });
     };
 
-    // submit form
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        const {
-            title,
-            author,
-            genre,
-            yearWritten,
-            edition,
-            binding,
-            bookCondition,
-            price
-        } = formState;
-        try {
-            //  await addUser({
-            //     variables: { 
-            //         username: username,
-            //         email: email,
-            //         password: password
-            //      },
-            // });
-            alert("You Did It!");
-        } catch (e) {
-            console.error(e);
-        }
-        setFormState({
-            title,
-            author,
-            genre,
-            yearWritten,
-            edition,
-            binding,
-            bookCondition,
-            price
-        });
-    };
+    function handleSubmit(evt) {
+        evt.preventDefault();
+
+        console.log(formState);
+
+        const url = `http://localhost:8080/book/${id}`;
+        const method = "PUT";
+
+        const init = {
+            method,
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(formState)
+        };
+
+        fetch(url, init)
+            .then(response => {
+                    return formState;
+            })
+            .then((data) => {
+                console.log('/addBook: ', data);
+                alert(`${data.title} successfully updated`);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+    function handleDelete() {
+        fetch(`http://localhost:8080/books/${id}`, { method: "DELETE" })
+            .then(() => alert(`${book.title} Deleted`))
+            .catch(error => console.log(error));
+    }
 
     function goBack() {
         document.location.replace(`/`);
@@ -82,7 +96,7 @@ export default function SingleBook() {
                 </Col>
                 <Col md="11">
                     <div className="content">
-                    <Row className='m-3'>
+                        <Row className='m-3'>
                             <Col md="4">
                                 <Card className="card-user">
                                     <Card.Body>
@@ -101,19 +115,19 @@ export default function SingleBook() {
                                 <Card className="card-user">
                                     <Card.Header>
                                         <Card.Title tag="h5">
-                                            {formState.title} <br/>
-                                            <small>{formState.author}</small>
-                                            </Card.Title>
+                                            {book.title} <br />
+                                            <small>{book.author}</small>
+                                        </Card.Title>
                                     </Card.Header>
                                     <Card.Body>
-                                        <Form onSubmit={handleFormSubmit}>
+                                        <Form onSubmit={handleSubmit}>
                                             <Row>
                                                 <Col className="px-1" md="6">
                                                     <Form.Group>
                                                         <label>Title</label>
                                                         <Form.Control
                                                             name="title"
-                                                            value={formState.title}
+                                                            value={formState.title ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -126,7 +140,7 @@ export default function SingleBook() {
                                                         </label>
                                                         <Form.Control
                                                             name="author"
-                                                            value={formState.author}
+                                                            value={formState.author ?? ""}
                                                             onChange={handleChange}
                                                             type="text" />
                                                     </Form.Group>
@@ -138,7 +152,7 @@ export default function SingleBook() {
                                                         <label>Genre</label>
                                                         <Form.Control
                                                             name="genre"
-                                                            value={formState.genre}
+                                                            value={formState.genre ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -149,7 +163,7 @@ export default function SingleBook() {
                                                         <label>Year Written</label>
                                                         <Form.Control
                                                             name="yearWritten"
-                                                            value={formState.yearWritten}
+                                                            value={formState.yearWritten ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -160,7 +174,7 @@ export default function SingleBook() {
                                                         <label>Edition</label>
                                                         <Form.Control
                                                             name="edition"
-                                                            value={formState.edition}
+                                                            value={formState.edition ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -173,7 +187,7 @@ export default function SingleBook() {
                                                         <label>Binding</label>
                                                         <Form.Control
                                                             name="binding"
-                                                            value={formState.binding}
+                                                            value={formState.binding ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -185,7 +199,7 @@ export default function SingleBook() {
                                                         <label>Condition</label>
                                                         <Form.Control
                                                             name="bookCondition"
-                                                            value={formState.bookCondition}
+                                                            value={formState.bookCondition ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -196,7 +210,7 @@ export default function SingleBook() {
                                                         <label>Price</label>
                                                         <Form.Control
                                                             name="price"
-                                                            value={formState.price}
+                                                            value={formState.price ?? ""}
                                                             onChange={handleChange}
                                                             type="text"
                                                         />
@@ -215,6 +229,8 @@ export default function SingleBook() {
                                                     <Button
                                                         className="btn-round mx-3"
                                                         variant="danger"
+                                                        onClick={() => handleDelete()}
+
                                                     >
                                                         Delete Book
                                                     </Button>
