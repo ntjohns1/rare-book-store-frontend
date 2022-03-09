@@ -21,7 +21,6 @@ export default function Homepage() {
                                     overflowY: 'auto'
                                 }}
                             >
-                                {/* <ViewCustomers /> */}
                                 <CustomerList />
                             </div>
                         </Col>

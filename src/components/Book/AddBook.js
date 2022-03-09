@@ -4,7 +4,7 @@ import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
 
 export default function AddBook() {
-    // form input to add Customer
+
     const [formState, setFormState] = useState({
         title: '',
         author: '',
@@ -16,11 +16,6 @@ export default function AddBook() {
         price: ''
     });
 
-
-    // let address = { ...customer.address }
-    // console.log(address);
-
-    // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
 
@@ -62,46 +57,7 @@ export default function AddBook() {
             .catch((error) => {
                 console.error('Error:', error);
             });
-        // setFormState({
-        //     title,
-        //     author,
-        //     genre,
-        //     yearWritten,
-        //     edition,
-        //     binding,
-        //     bookCondition,
-        //     price
-        // });
-
     }
-
-    // submit form
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        const {
-            title,
-            author,
-            genre,
-            yearWritten,
-            edition,
-            binding,
-            bookCondition,
-            price
-        } = formState;
-        try {
-            //  await addUser({
-            //     variables: { 
-            //         username: username,
-            //         email: email,
-            //         password: password
-            //      },
-            // });
-            alert("You Did It!");
-        } catch (e) {
-            console.error(e);
-        }
-
-    };
 
     function goBack() {
         document.location.replace(`/`);
