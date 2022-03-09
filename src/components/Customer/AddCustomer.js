@@ -21,7 +21,7 @@ export default function AddCustomer() {
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
-        console.log(typeof({...formState.phone}));
+        console.log(typeof ({ ...formState.phone }));
 
         setFormState({
             ...formState,
@@ -45,7 +45,7 @@ export default function AddCustomer() {
             body: JSON.stringify(
                 {
                     "firstName": formState.firstName,
-                    "lastName":  formState.lastName,
+                    "lastName": formState.lastName,
                     "email": formState.email,
                     "phone": formState.phone,
                     "address": {
@@ -62,8 +62,8 @@ export default function AddCustomer() {
 
         fetch(url, init)
             .then(response => {
-                    console.log(response.status);
-                    return response.json();
+                console.log(response.status);
+                return response.json();
             })
             .then((data) => {
                 console.log('/addCustomer: ', data);
@@ -94,10 +94,10 @@ export default function AddCustomer() {
     return (
         <Container fluid>
             <Row>
-            <Col md="1">
-                <Sidebar />
-            </Col>
-            <Col md="11">
+                <Col md="1">
+                    <Sidebar />
+                </Col>
+                <Col md="11">
                     <Row className='m-3'>
                         <Col md="4">
                             <Card className="card-user">
@@ -265,7 +265,7 @@ export default function AddCustomer() {
                             </Card>
                         </Col>
                     </Row>
-            </Col>
+                </Col>
             </Row>
         </Container>
     )

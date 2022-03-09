@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
-// import customers from '../../util/UserSeeds';
-// import address from '../../util/AddressSeeds'
 
 export default function SingleCustomer() {
     const id = useParams().customerId;
@@ -16,89 +14,85 @@ export default function SingleCustomer() {
             .then(result =>
                 setCustomer(result))
             .catch(console.log)
-            console.log(customer);
+        console.log(customer);
     }, []);
     useEffect(() => {
-        setFormState({ 
+        setFormState({
             ...customer,
             ...customer.address,
-         })
+        })
     }, [customer]);
-    
-    
-    
+
     // form input to update Customer
     const [formState, setFormState] = useState({
         ...customer,
         ...customer.address,
     });
-    
+
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
-        
+
         setFormState({
             ...formState,
             [name]: value,
         });
     };
 
-function handleSubmit(evt) {
-    evt.preventDefault();
+    function handleSubmit(evt) {
+        evt.preventDefault();
 
-    console.log(formState);
+        console.log(formState);
 
-    const url = `http://localhost:8080/customers/${id}`;
-    const method = "PUT";
+        const url = `http://localhost:8080/customers/${id}`;
+        const method = "PUT";
 
-    const init = {
-        method,
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        },
-        body: JSON.stringify(
-            {
-                "id": id,
-                "firstName": formState.firstName,
-                "lastName":  formState.lastName,
-                "email": formState.email,
-                "phone": formState.phone,
-                "address": {
-                    "street1": formState.street1,
-                    "street2": formState.street2,
-                    "city": formState.city,
-                    "state": formState.state,
-                    "zipcode": formState.zipcode
-                },
-                "vip": formState.vip
-            }
-        )
-};
+        const init = {
+            method,
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(
+                {
+                    "id": id,
+                    "firstName": formState.firstName,
+                    "lastName": formState.lastName,
+                    "email": formState.email,
+                    "phone": formState.phone,
+                    "address": {
+                        "street1": formState.street1,
+                        "street2": formState.street2,
+                        "city": formState.city,
+                        "state": formState.state,
+                        "zipcode": formState.zipcode
+                    },
+                    "vip": formState.vip
+                }
+            )
+        };
 
-    fetch(url, init)
-        .then(response => {
-                return formState;
-        })
-        .then((data) => {
-            console.log('/updateCustomer: ', data);
-            alert(`${data.firstName} successfully updated`);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
-}
+        fetch(url, init)
+            .then(() => { return formState; })
+            .then((data) => {
+                console.log('/updateCustomer: ', data);
+                alert(`${data.firstName} successfully updated`);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
 
-function handleDelete() {
-    fetch(`http://localhost:8080/customers/${id}`, { method: "DELETE" })
-        .then(() => alert(`${customer.firstName} Deleted`))
-        .then(goBack())
-        .catch(error => console.log(error));
-}
+    function handleDelete() {
+        fetch(`http://localhost:8080/customers/${id}`, { method: "DELETE" })
+            .then(() => alert(`${customer.firstName} Deleted`))
+            .then(goBack())
+            .catch(error => console.log(error));
+    }
 
-function goBack() {
-    document.location.replace(`/`);
-}
+    function goBack() {
+        document.location.replace(`/`);
+    }
     return (
         <Container fluid>
             <Row >
