@@ -1,13 +1,20 @@
+import { useEffect, useState } from "react";
+
 import { Card, Toast } from 'react-bootstrap';
-import customers from '../../util/UserSeeds';
+// import customers from '../../util/UserSeeds';
 
 
 export default function CustomerList() {
+    const [customers, setCustomers] = useState([]);
+
     
-        // fetch("http://localhost:8080/customers")
-        //     .then(response => response.json())
-        //     .then(result => setRecords(result))
-        //     .catch(console.log);
+    
+    useEffect(() => {
+        fetch("http://localhost:8080/customers")
+                .then(response => response.json())
+                .then(result => setCustomers(result))
+                .catch(console.log);
+        }, []);
     
     function goToCustomer(customerId) {
           document.location.replace(`/customer/${customerId}`);

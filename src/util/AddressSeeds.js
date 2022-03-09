@@ -6,7 +6,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Kaneohe",
 		state: "Hawaii",
-		zipCode: "56582",
+		zipcode: "56582",
 		phone: "(943) 605-9581"
 	},
 	{
@@ -15,7 +15,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Auburn",
 		state: "Maine",
-		zipCode: "37718",
+		zipcode: "37718",
 		phone: "(798) 591-1372"
 	},
 	{
@@ -24,7 +24,7 @@ const AddressSeeds =
 		street2: "Apt. 3558",
 		city: "Denver",
 		state: "Colorado",
-		zipCode: "80888",
+		zipcode: "80888",
 		phone: "(967) 657-5481"
 	},
 	{
@@ -33,7 +33,7 @@ const AddressSeeds =
 		street2: "Apt. B4",
 		city: "Eugene",
 		state: "Oregon",
-		zipCode: "78136",
+		zipcode: "78136",
 		phone: "(531) 236-4649"
 	},
 	{
@@ -42,7 +42,7 @@ const AddressSeeds =
 		street2: "Apt. C2",
 		city: "Jefferson City",
 		state: "Missouri",
-		zipCode: "69482",
+		zipcode: "69482",
 		phone: "(575) 945-7267"
 	},
 	{
@@ -51,7 +51,7 @@ const AddressSeeds =
 		street2: "Apt. G",
 		city: "Bloomington",
 		state: "Minnesota",
-		zipCode: "34828",
+		zipcode: "34828",
 		phone: "(870) 245-8526"
 	},
 	{
@@ -60,7 +60,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Chesapeake",
 		state: "Virginia",
-		zipCode: "37591",
+		zipcode: "37591",
 		phone: "(945) 395-0974"
 	},
 	{
@@ -69,7 +69,7 @@ const AddressSeeds =
 		street2: "Apt. 78",
 		city: "Shreveport",
 		state: "Louisiana",
-		zipCode: "16718",
+		zipcode: "16718",
 		phone: "(889) 757-5553"
 	},
 	{
@@ -78,7 +78,7 @@ const AddressSeeds =
 		street2: "Apt. B",
 		city: "Baton Rouge",
 		state: "Louisiana",
-		zipCode: "54495",
+		zipcode: "54495",
 		phone: "(511) 594-0833"
 	},
 	{
@@ -87,7 +87,7 @@ const AddressSeeds =
 		street2: "Apt. C3",
 		city: "Auburn",
 		state: "Maine",
-		zipCode: "71471",
+		zipcode: "71471",
 		phone: "(755) 723-5804"
 	},
 	{
@@ -96,7 +96,7 @@ const AddressSeeds =
 		street2: "Apt. D3",
 		city: "Fairbanks",
 		state: "Alaska",
-		zipCode: "99984",
+		zipcode: "99984",
 		phone: "(252) 886-6318"
 	},
 	{
@@ -105,7 +105,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Nashville",
 		state: "Tennessee",
-		zipCode: "51173",
+		zipcode: "51173",
 		phone: "(474) 415-1698"
 	},
 	{
@@ -114,7 +114,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Cambide",
 		state: "Masachusetts",
-		zipCode: "4681",
+		zipcode: "4681",
 		phone: "(566) 882-86"
 	},
 	{
@@ -123,7 +123,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Springdale",
 		state: "Arkansas",
-		zipCode: "72726",
+		zipcode: "72726",
 		phone: "(368) 275-6651"
 	},
 	{
@@ -132,7 +132,7 @@ const AddressSeeds =
 		street2: "Apt. C3",
 		city: "Bear",
 		state: "Delaware",
-		zipCode: "70782",
+		zipcode: "70782",
 		phone: "(677) 778-6261"
 	},
 	{
@@ -141,7 +141,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Bowling Green",
 		state: "Kentucky",
-		zipCode: "78369",
+		zipcode: "78369",
 		phone: "(326) 378-4138"
 	},
 	{
@@ -150,7 +150,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Huntsville",
 		state: "Alabama",
-		zipCode: "36116",
+		zipcode: "36116",
 		phone: "(633) 885-2455"
 	},
 	{
@@ -159,7 +159,7 @@ const AddressSeeds =
 		street2: "Apt. 54",
 		city: "Springfield",
 		state: "Massachusetts",
-		zipCode: "38610",
+		zipcode: "38610",
 		phone: "(505) 725-7171"
 	},
 	{
@@ -168,7 +168,7 @@ const AddressSeeds =
 		street2: "Apt. 234",
 		city: "Chandler",
 		state: "Arizona",
-		zipCode: "86705",
+		zipcode: "86705",
 		phone: "(573) 272-1536"
 	},
 	{
@@ -177,7 +177,7 @@ const AddressSeeds =
 		street2: "Apt. C2",
 		city: "Sacramento",
 		state: "California",
-		zipCode: "94141",
+		zipcode: "94141",
 		phone: "(493) 405-7545"
 	},
 	{
@@ -186,7 +186,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Richmond",
 		state: "Virginia",
-		zipCode: "46743",
+		zipcode: "46743",
 		phone: "(295) 941-5312"
 	},
 	{
@@ -195,7 +195,7 @@ const AddressSeeds =
 		street2: "Apt. E",
 		city: "Bridgeport",
 		state: "Connecticut",
-		zipCode: "84181",
+		zipcode: "84181",
 		phone: "(310) 267-17"
 	},
 	{
@@ -204,7 +204,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Minneapolis",
 		state: "Minnesota",
-		zipCode: "89770",
+		zipcode: "89770",
 		phone: "(361) 414-6850"
 	},
 	{
@@ -213,7 +213,7 @@ const AddressSeeds =
 		street2: "Apt. B",
 		city: "Hartford",
 		state: "Connecticu",
-		zipCode: "38685",
+		zipcode: "38685",
 		phone: "(924) 549-3888"
 	},
 	{
@@ -222,7 +222,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Bellevue",
 		state: "Nebraska",
-		zipCode: "27816",
+		zipcode: "27816",
 		phone: "(704) 917-6210"
 	},
 	{
@@ -231,7 +231,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Richmond",
 		state: "Virginia",
-		zipCode: "70767",
+		zipcode: "70767",
 		phone: "(830) 302-1265"
 	},
 	{
@@ -240,7 +240,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Sandy",
 		state: "Utah",
-		zipCode: "61713",
+		zipcode: "61713",
 		phone: "(541) 850-0278"
 	},
 	{
@@ -249,7 +249,7 @@ const AddressSeeds =
 		street2: "Apt. C2",
 		city: "Topeka",
 		state: "Kansas",
-		zipCode: "87565",
+		zipcode: "87565",
 		phone: "(734) 276-0448"
 	},
 	{
@@ -258,7 +258,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Essex",
 		state: "Vermont",
-		zipCode: "51367",
+		zipcode: "51367",
 		phone: "(622) 526-7408"
 	},
 	{
@@ -267,7 +267,7 @@ const AddressSeeds =
 		street2: "Apt. G",
 		city: "Fort Wayne",
 		state: "Indiana",
-		zipCode: "75258",
+		zipcode: "75258",
 		phone: "(752) 352-8114"
 	},
 	{
@@ -276,7 +276,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Knoxville",
 		state: "Tennessee",
-		zipCode: "75829",
+		zipcode: "75829",
 		phone: "(593) 122-7057"
 	},
 	{
@@ -285,7 +285,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Honolulu",
 		state: "Hawaii",
-		zipCode: "34547",
+		zipcode: "34547",
 		phone: "(207) 292-7943"
 	},
 	{
@@ -294,7 +294,7 @@ const AddressSeeds =
 		street2: "Apt. 234",
 		city: "Rockford",
 		state: "Illinois",
-		zipCode: "82514",
+		zipcode: "82514",
 		phone: "(134) 558-7792"
 	},
 	{
@@ -303,7 +303,7 @@ const AddressSeeds =
 		street2: "Apt. 56",
 		city: "Bowling Green",
 		state: "Kentucky",
-		zipCode: "63171",
+		zipcode: "63171",
 		phone: "(637) 757-1744"
 	},
 	{
@@ -312,7 +312,7 @@ const AddressSeeds =
 		street2: "Apt. F",
 		city: "Butte",
 		state: "Montana",
-		zipCode: "50272",
+		zipcode: "50272",
 		phone: "(864) 845-4917"
 	},
 	{
@@ -321,7 +321,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Seattle",
 		state: "Washington",
-		zipCode: "57873",
+		zipcode: "57873",
 		phone: "(741) 605-3710"
 	},
 	{
@@ -330,7 +330,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Naperville",
 		state: "Illinois",
-		zipCode: "11820",
+		zipcode: "11820",
 		phone: "(440) 736-9424"
 	},
 	{
@@ -339,7 +339,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Auburn",
 		state: "Maine",
-		zipCode: "85129",
+		zipcode: "85129",
 		phone: "(438) 438-5562"
 	},
 	{
@@ -348,7 +348,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Kenosha",
 		state: "Wisconsin",
-		zipCode: "95982",
+		zipcode: "95982",
 		phone: "(662) 667-7848"
 	},
 	{
@@ -357,7 +357,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Duluth",
 		state: "Minnesota",
-		zipCode: "35404",
+		zipcode: "35404",
 		phone: "(757) 812-8868"
 	},
 	{
@@ -366,7 +366,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Norfolk",
 		state: "Virginia",
-		zipCode: "16335",
+		zipcode: "16335",
 		phone: "(381) 327-5741"
 	},
 	{
@@ -375,7 +375,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Minneapolis",
 		state: "Minnesota",
-		zipCode: "39588",
+		zipcode: "39588",
 		phone: "(338) 256-5664"
 	},
 	{
@@ -384,7 +384,7 @@ const AddressSeeds =
 		street2: "Apt. 78",
 		city: "Hattiesburg",
 		state: "Mississippi",
-		zipCode: "22757",
+		zipcode: "22757",
 		phone: "(708) 544-3610"
 	},
 	{
@@ -393,7 +393,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Hilo",
 		state: "Hawaii",
-		zipCode: "78291",
+		zipcode: "78291",
 		phone: "(352) 871-9835"
 	},
 	{
@@ -402,7 +402,7 @@ const AddressSeeds =
 		street2: null,
 		city: "New Haven",
 		state: "Connecticut",
-		zipCode: "19828",
+		zipcode: "19828",
 		phone: "(526) 218-7225"
 	},
 	{
@@ -411,7 +411,7 @@ const AddressSeeds =
 		street2: null,
 		city: "New Orleans",
 		state: "Louisiana",
-		zipCode: "71362",
+		zipcode: "71362",
 		phone: "(526) 385-6063"
 	},
 	{
@@ -420,7 +420,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Portland",
 		state: "Oregon",
-		zipCode: "77246",
+		zipcode: "77246",
 		phone: "(383) 177-1526"
 	},
 	{
@@ -429,7 +429,7 @@ const AddressSeeds =
 		street2: "Apt. D",
 		city: "Mesa",
 		state: "Arizona",
-		zipCode: "86674",
+		zipcode: "86674",
 		phone: "(287) 776-8212"
 	},
 	{
@@ -438,7 +438,7 @@ const AddressSeeds =
 		street2: "Apt. C5",
 		city: "West Jordan",
 		state: "Utah",
-		zipCode: "73034",
+		zipcode: "73034",
 		phone: "(562) 371-3157"
 	},
 	{
@@ -447,7 +447,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Chesapeake",
 		state: "Virginia",
-		zipCode: "58653",
+		zipcode: "58653",
 		phone: "(847) 432-4824"
 	},
 	{
@@ -456,7 +456,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Oklahoma City",
 		state: "Oklahoma",
-		zipCode: "91362",
+		zipcode: "91362",
 		phone: "(587) 744-2431"
 	},
 	{
@@ -465,7 +465,7 @@ const AddressSeeds =
 		street2: "Apt. B",
 		city: "Kearney",
 		state: "Nebraska",
-		zipCode: "55756",
+		zipcode: "55756",
 		phone: "(675) 447-5496"
 	},
 	{
@@ -474,7 +474,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Bloomington",
 		state: "Minnesota",
-		zipCode: "84552",
+		zipcode: "84552",
 		phone: "(864) 210-3699"
 	},
 	{
@@ -483,7 +483,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Tulsa",
 		state: "Oklahoma",
-		zipCode: "53618",
+		zipcode: "53618",
 		phone: "(540) 975-4172"
 	},
 	{
@@ -492,7 +492,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Kailua",
 		state: "Hawaii",
-		zipCode: "77303",
+		zipcode: "77303",
 		phone: "(216) 742-6243"
 	},
 	{
@@ -501,7 +501,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Augusta",
 		state: "Maine",
-		zipCode: "56714",
+		zipcode: "56714",
 		phone: "(818) 344-2421"
 	},
 	{
@@ -510,7 +510,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Broken Arrow",
 		state: "Oklahoma",
-		zipCode: "34449",
+		zipcode: "34449",
 		phone: "(250) 547-5449"
 	},
 	{
@@ -519,7 +519,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Lafayette",
 		state: "Louisiana",
-		zipCode: "22884",
+		zipcode: "22884",
 		phone: "(513) 807-4052"
 	},
 	{
@@ -528,7 +528,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Stamford",
 		state: "Connecticut",
-		zipCode: "58346",
+		zipcode: "58346",
 		phone: "(537) 155-1367"
 	},
 	{
@@ -537,7 +537,7 @@ const AddressSeeds =
 		street2: "Apt. 78",
 		city: "Cambide",
 		state: "Masachusetts",
-		zipCode: "64373",
+		zipcode: "64373",
 		phone: "(613) 172-33"
 	},
 	{
@@ -546,7 +546,7 @@ const AddressSeeds =
 		street2: "Apt. C2",
 		city: "Mesa",
 		state: "Arizona",
-		zipCode: "85679",
+		zipcode: "85679",
 		phone: "(958) 221-7833"
 	},
 	{
@@ -555,7 +555,7 @@ const AddressSeeds =
 		street2: "Apt. 45",
 		city: "Springdale",
 		state: "Arkansas",
-		zipCode: "71137",
+		zipcode: "71137",
 		phone: "(724) 698-4964"
 	},
 	{
@@ -564,7 +564,7 @@ const AddressSeeds =
 		street2: null,
 		city: "San Francisco",
 		state: "California",
-		zipCode: "96188",
+		zipcode: "96188",
 		phone: "(523) 465-6163"
 	},
 	{
@@ -573,7 +573,7 @@ const AddressSeeds =
 		street2: "Apt. 36",
 		city: "Anchorage",
 		state: "Alaska",
-		zipCode: "99875",
+		zipcode: "99875",
 		phone: "(173) 731-5088"
 	},
 	{
@@ -582,7 +582,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Shreveport",
 		state: "Louisiana",
-		zipCode: "53618",
+		zipcode: "53618",
 		phone: "(483) 708-3602"
 	},
 	{
@@ -591,7 +591,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Lakewood",
 		state: "Colorado",
-		zipCode: "73678",
+		zipcode: "73678",
 		phone: "(566) 410-1561"
 	},
 	{
@@ -600,7 +600,7 @@ const AddressSeeds =
 		street2: "Apt. G",
 		city: "Meidan",
 		state: "Idaho",
-		zipCode: "21346",
+		zipcode: "21346",
 		phone: "(334) 521-4512"
 	},
 	{
@@ -609,7 +609,7 @@ const AddressSeeds =
 		street2: "Apt. C",
 		city: "Boston",
 		state: "Massachusetts",
-		zipCode: "61558",
+		zipcode: "61558",
 		phone: "(529) 388-3874"
 	},
 	{
@@ -618,7 +618,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Baltimore",
 		state: "Maryland",
-		zipCode: "74966",
+		zipcode: "74966",
 		phone: "(479) 808-8134"
 	},
 	{
@@ -627,7 +627,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Juneau",
 		state: "Alaska",
-		zipCode: "99871",
+		zipcode: "99871",
 		phone: "(829) 786-4758"
 	},
 	{
@@ -636,7 +636,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Wilmington",
 		state: "Delaware",
-		zipCode: "47184",
+		zipcode: "47184",
 		phone: "(409) 838-8777"
 	},
 	{
@@ -645,7 +645,7 @@ const AddressSeeds =
 		street2: null,
 		city: "North Las Vegas",
 		state: "Nevada",
-		zipCode: "79956",
+		zipcode: "79956",
 		phone: "(162) 114-6417"
 	},
 	{
@@ -654,7 +654,7 @@ const AddressSeeds =
 		street2: "Apt. A5",
 		city: "South Bend",
 		state: "Indiana",
-		zipCode: "38326",
+		zipcode: "38326",
 		phone: "(378) 461-5936"
 	},
 	{
@@ -662,7 +662,7 @@ const AddressSeeds =
 		street1: "P.O. Box 813",
 		street2: "Apt. 36",
 		city: "Grand Raid",
-		state: "Michiga", "zipCode": "44141",
+		state: "Michiga", "zipcode": "44141",
 		phone: "(198)267-671"
 	},
 	{
@@ -671,7 +671,7 @@ const AddressSeeds =
 		street: "Apt. 427",
 		city: "Annapolis",
 		state: "Maryland",
-		zipCode: "32116",
+		zipcode: "32116",
 		phone: "(129) 764-6162"
 	},
 	{
@@ -680,7 +680,7 @@ const AddressSeeds =
 		street2: null,
 		city: "New Haven",
 		state: "Connecticut",
-		zipCode: "57758",
+		zipcode: "57758",
 		phone: "(453) 725-5121"
 	},
 	{
@@ -689,7 +689,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Lincoln",
 		state: "Nebraska",
-		zipCode: "75488",
+		zipcode: "75488",
 		phone: "(343) 242-1026"
 	},
 	{
@@ -698,7 +698,7 @@ const AddressSeeds =
 		street2: "Apt. 43",
 		city: "Kaneohe",
 		state: "Hawaii",
-		zipCode: "84733",
+		zipcode: "84733",
 		phone: "(133) 538-0034"
 	},
 	{
@@ -707,7 +707,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Waterbury",
 		state: "Connecticut",
-		zipCode: "29664",
+		zipcode: "29664",
 		phone: "(818) 956-1531"
 	},
 	{
@@ -716,7 +716,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Iowa City",
 		state: "Iowa",
-		zipCode: "24179",
+		zipcode: "24179",
 		phone: "(439) 724-1918"
 	},
 	{
@@ -725,7 +725,7 @@ const AddressSeeds =
 		street2: "Apt. D2",
 		city: "Sioux City",
 		state: "Iowa",
-		zipCode: "68022",
+		zipcode: "68022",
 		phone: "(987) 245-3128"
 	},
 	{
@@ -734,7 +734,7 @@ const AddressSeeds =
 		street2: "Apt. F",
 		city: "Jefferson City",
 		state: "Missouri",
-		zipCode: "35276",
+		zipcode: "35276",
 		phone: "(142) 656-6506"
 	},
 	{
@@ -743,7 +743,7 @@ const AddressSeeds =
 		street2: "Apt. C4",
 		city: "Richmond",
 		state: "Virginia",
-		zipCode: "77728",
+		zipcode: "77728",
 		phone: "(211) 440-6990"
 	},
 	{
@@ -752,7 +752,7 @@ const AddressSeeds =
 		street2: "Apt. F",
 		city: "Sandy",
 		state: "Utah",
-		zipCode: "66241",
+		zipcode: "66241",
 		phone: "(618) 749-8997"
 	},
 	{
@@ -761,7 +761,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Biloxi",
 		state: "Mississippi",
-		zipCode: "46671",
+		zipcode: "46671",
 		phone: "(506) 815-3587"
 	},
 	{
@@ -770,7 +770,7 @@ const AddressSeeds =
 		street2: "Apt. B5",
 		city: "Wyoming",
 		state: "Wyoming",
-		zipCode: "42657",
+		zipcode: "42657",
 		phone: "(442) 464-3243"
 	},
 	{
@@ -779,7 +779,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Olathe",
 		state: "Kansas",
-		zipCode: "42715",
+		zipcode: "42715",
 		phone: "(550) 605-4144"
 	},
 	{
@@ -788,7 +788,7 @@ const AddressSeeds =
 		street2: "Apt. G",
 		city: "Overland Park",
 		state: "Kansas",
-		zipCode: "71574",
+		zipcode: "71574",
 		phone: "(467) 918-0593"
 	},
 	{
@@ -797,7 +797,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Minneapolis",
 		state: "Minnesota",
-		zipCode: "44056",
+		zipcode: "44056",
 		phone: "(223) 798-4964"
 	},
 	{
@@ -806,7 +806,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Atlanta",
 		state: "Georgia",
-		zipCode: "24160",
+		zipcode: "24160",
 		phone: "(163) 578-7381"
 	},
 	{
@@ -815,7 +815,7 @@ const AddressSeeds =
 		street2: null, 
 		city: "Flint",
 		state: "Michigan",
-		zipCode: "75908",		
+		zipcode: "75908",		
 		phone: "(215) 424-7196"
 	},
 	{
@@ -824,7 +824,7 @@ const AddressSeeds =
 		street2: "Apt. B",
 		city: "Huntsville",
 		state: "Alabama",
-		zipCode: "36861",
+		zipcode: "36861",
 		phone: "(535) 739-4366"
 	},
 	{
@@ -833,7 +833,7 @@ const AddressSeeds =
 		street2: "Apt. D4",
 		city: "Aurora",
 		state: "Colorado",
-		zipCode: "24281",
+		zipcode: "24281",
 		phone: "(405) 479-3637"
 	},
 	{
@@ -842,7 +842,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Augusta",
 		state: "Maine",
-		zipCode: "12868",
+		zipcode: "12868",
 		phone: "(687) 639-1537"
 	},
 	{
@@ -851,7 +851,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Bloomington",
 		state: "Minnesota",
-		zipCode: "65772",
+		zipcode: "65772",
 		phone: "(722) 725-3889"
 	},
 	{
@@ -860,7 +860,7 @@ const AddressSeeds =
 		street2: "Apt. 854",
 		city: "Annapolis",
 		state: "Maryland",
-		zipCode: "27933",
+		zipcode: "27933",
 		phone: "(112) 558-6064"
 	},
 	{
@@ -869,7 +869,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Anchorage",
 		state: "Alaska",
-		zipCode: "99968",
+		zipcode: "99968",
 		phone: "(705) 773-5198"
 	},
 	{
@@ -878,7 +878,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Fort Worth",
 		state: "Texas",
-		zipCode: "46612",
+		zipcode: "46612",
 		phone: "(454) 924-5559"
 	},
 	{
@@ -887,7 +887,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Columbia",
 		state: "Maryland",
-		zipCode: "49659",
+		zipcode: "49659",
 		phone: "(631) 563-4690"
 	},
 	{
@@ -896,7 +896,7 @@ const AddressSeeds =
 		street2: "Apt. H",
 		city: "Norman",
 		state: "Oklahoma",
-		zipCode: "75880",
+		zipcode: "75880",
 		phone: "(521) 355-9223"
 	},
 	{
@@ -905,7 +905,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Eugene",
 		state: "Oregon",
-		zipCode: "51687",
+		zipcode: "51687",
 		phone: "(127) 343-6178"
 	},
 	{
@@ -914,7 +914,7 @@ const AddressSeeds =
 		street2: "Apt. E",
 		city: "Stamford",
 		state: "Connecticut",
-		zipCode: "88797",
+		zipcode: "88797",
 		phone: "(532) 423-5994"
 	},
 	{
@@ -923,7 +923,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Anchorage",
 		state: "Alaska",
-		zipCode: "99613",
+		zipcode: "99613",
 		phone: "(547) 722-4017"
 	},
 	{
@@ -932,7 +932,7 @@ const AddressSeeds =
 		street2: "Apt. 67",
 		city: "Birmingham",
 		state: "Alabama",
-		zipCode: "36377",
+		zipcode: "36377",
 		phone: "(137) 257-1781"
 	},
 	{
@@ -941,7 +941,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Kenosha",
 		state: "Wisconsin",
-		zipCode: "50538",
+		zipcode: "50538",
 		phone: "(678) 325-6663"
 	},
 	{
@@ -950,7 +950,7 @@ const AddressSeeds =
 		street2: "Apt. D",
 		city: "Fayetteville",
 		state: "Arkansas",
-		zipCode: "71442",
+		zipcode: "71442",
 		phone: "(345) 611-8861"
 	},
 	{
@@ -959,7 +959,7 @@ const AddressSeeds =
 		street2: "Apt. E",
 		city: "Springfield",
 		state: "Massachusetts",
-		zipCode: "86260",
+		zipcode: "86260",
 		phone: "(437) 178-9656"
 	},
 	{
@@ -968,7 +968,7 @@ const AddressSeeds =
 		street2: null,
 		city: "Wichita",
 		state: "Kansas",
-		zipCode: "81388",
+		zipcode: "81388",
 		phone: "(873) 731-3658"
 	}
 ]
