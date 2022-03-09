@@ -18,7 +18,7 @@ export default function SingleCustomer() {
         street2: address[id] ? address[id].street2 : '',
         city: address[id] ? address[id].city : '',
         state: address[id] ? address[id].state : '',
-        zipCode: address[id] ? address[id].zipCode : '',
+        zipcode: address[id] ? address[id].zipcode : '',
         phone: address[id] ? address[id].phone : '',
         rewardsLevel: customers[id] ? customers[id].rewardsLevel : '',
     });
@@ -45,7 +45,7 @@ export default function SingleCustomer() {
             street2,
             city,
             state,
-            zipCode,
+            zipcode,
             phone,
             rewardsLevel,
         } = formState;
@@ -70,7 +70,7 @@ export default function SingleCustomer() {
             street2,
             city,
             state,
-            zipCode,
+            zipcode,
             phone,
             rewardsLevel,
         });
@@ -211,8 +211,8 @@ export default function SingleCustomer() {
                                                 <Form.Group>
                                                     <label>Zip Code</label>
                                                     <Form.Control
-                                                        name="zipCode"
-                                                        value={formState.zipCode}
+                                                        name="zipcode"
+                                                        value={formState.zipcode}
                                                         onChange={handleChange}
                                                         type="text" />
                                                 </Form.Group>

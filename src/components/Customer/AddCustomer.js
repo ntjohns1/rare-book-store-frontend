@@ -6,17 +6,16 @@ import Sidebar from '../Sidebar';
 export default function AddCustomer() {
     // form input to add Customer
     const [formState, setFormState] = useState({
-        firstName: '',
-        lastName: '',
-        username: '',
-        email: '',
         street1: '',
         street2: '',
         city: '',
         state: '',
-        zipCode: '',
+        zipcode: '',
+        email: '',
+        firstName: '',
+        lastName: '',
         phone: '',
-        rewardsLevel: '',
+        vip: '',
     });
 
 
@@ -26,6 +25,7 @@ export default function AddCustomer() {
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
+        console.log(typeof({...formState.phone}));
 
         setFormState({
             ...formState,
@@ -34,47 +34,60 @@ export default function AddCustomer() {
     };
 
     // submit form
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        const {
-            firstName,
-            lastName,
-            username,
-            email,
-            street1,
-            street2,
-            city,
-            state,
-            zipCode,
-            phone,
-            rewardsLevel,
-        } = formState;
-        try {
-            //  await addUser({
-            //     variables: { 
-            //         username: username,
-            //         email: email,
-            //         password: password
-            //      },
-            // });
-            alert("You Did It!");
-        } catch (e) {
-            console.error(e);
-        }
-        setFormState({
-            firstName,
-            lastName,
-            username,
-            email,
-            street1,
-            street2,
-            city,
-            state,
-            zipCode,
-            phone,
-            rewardsLevel,
-        });
-    };
+    function handleSubmit(evt) {
+        evt.preventDefault();
+
+        const url = "http://localhost:8080/customers";
+        const method = "POST";
+
+        const init = {
+            method,
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(
+                {
+                    "firstName": formState.firstName,
+                    "lastName":  formState.lastName,
+                    "email": formState.email,
+                    "phone": formState.phone,
+                    "address": {
+                        "street1": formState.street1,
+                        "street2": formState.street2,
+                        "city": formState.city,
+                        "state": formState.state,
+                        "zipcode": formState.zipcode
+                    },
+                    "vip": formState.vip
+                }
+            )
+        };
+
+        fetch(url, init)
+            .then(response => {
+                    console.log(response.status);
+                    return response.json();
+            })
+            .then((data) => {
+                console.log('/addCustomer: ', data);
+                alert(`${data.title} added to Customers`);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        // setFormState({
+        //     title,
+        //     author,
+        //     genre,
+        //     yearWritten,
+        //     edition,
+        //     binding,
+        //     bookCondition,
+        //     price
+        // });
+
+    }
 
     function goBack() {
         document.location.replace(`/`);
@@ -91,7 +104,7 @@ export default function AddCustomer() {
                         <Col md="4">
                             <Card className="card-user">
                                 <Card.Body>
-                                    <div className="author">
+                                    <div>
                                         <img
                                             alt="..."
                                             className="avatar border-gray"
@@ -108,19 +121,8 @@ export default function AddCustomer() {
                                     <Card.Title tag="h5">Add Customer</Card.Title>
                                 </Card.Header>
                                 <Card.Body>
-                                    <Form onSubmit={handleFormSubmit}>
+                                    <Form onSubmit={handleSubmit}>
                                         <Row>
-                                            <Col className="px-1" md="6">
-                                                <Form.Group>
-                                                    <label>Username</label>
-                                                    <Form.Control
-                                                        name="username"
-                                                        value={formState.username}
-                                                        onChange={handleChange}
-                                                        type="text"
-                                                    />
-                                                </Form.Group>
-                                            </Col>
                                             <Col className="pl-1" md="6">
                                                 <Form.Group>
                                                     <label htmlFor="exampleInputEmail1">
@@ -128,7 +130,7 @@ export default function AddCustomer() {
                                                     </label>
                                                     <Form.Control
                                                         name="email"
-                                                        value={formState.email}
+                                                        value={formState.email ?? ""}
                                                         onChange={handleChange}
                                                         type="email" />
                                                 </Form.Group>
@@ -140,7 +142,7 @@ export default function AddCustomer() {
                                                     <label>First Name</label>
                                                     <Form.Control
                                                         name="firstName"
-                                                        value={formState.firstName}
+                                                        value={formState.firstName ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -151,7 +153,7 @@ export default function AddCustomer() {
                                                     <label>Last Name</label>
                                                     <Form.Control
                                                         name="lastName"
-                                                        value={formState.lastName}
+                                                        value={formState.lastName ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -164,7 +166,7 @@ export default function AddCustomer() {
                                                     <label>Address</label>
                                                     <Form.Control
                                                         name="street1"
-                                                        value={formState.street1}
+                                                        value={formState.street1 ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -177,7 +179,7 @@ export default function AddCustomer() {
                                                     <label>Address 2</label>
                                                     <Form.Control
                                                         name="street2"
-                                                        value={formState.street2}
+                                                        value={formState.street2 ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -190,7 +192,7 @@ export default function AddCustomer() {
                                                     <label>City</label>
                                                     <Form.Control
                                                         name="city"
-                                                        value={formState.city}
+                                                        value={formState.city ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -201,7 +203,7 @@ export default function AddCustomer() {
                                                     <label>State</label>
                                                     <Form.Control
                                                         name="state"
-                                                        value={formState.state}
+                                                        value={formState.state ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -211,8 +213,8 @@ export default function AddCustomer() {
                                                 <Form.Group>
                                                     <label>Zip Code</label>
                                                     <Form.Control
-                                                        name="zipCode"
-                                                        value={formState.zipCode}
+                                                        name="zipcode"
+                                                        value={formState.zipcode ?? ""}
                                                         onChange={handleChange}
                                                         type="text" />
                                                 </Form.Group>
@@ -224,7 +226,7 @@ export default function AddCustomer() {
                                                     <label>Phone</label>
                                                     <Form.Control
                                                         name="phone"
-                                                        value={formState.phone}
+                                                        value={formState.phone ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
@@ -232,10 +234,10 @@ export default function AddCustomer() {
                                             </Col>
                                             <Col md="6">
                                                 <Form.Group>
-                                                    <label>Rewards Level</label>
+                                                    <label>VIP</label>
                                                     <Form.Control
-                                                        name="rewardsLevel"
-                                                        value={formState.rewardsLevel}
+                                                        name="vip"
+                                                        value={formState.vip ?? ""}
                                                         onChange={handleChange}
                                                         type="text"
                                                     />
