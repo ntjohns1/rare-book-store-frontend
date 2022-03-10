@@ -58,7 +58,7 @@ export default function SingleBook() {
 
         fetch(url, init)
             .then(() => {
-                    return formState;
+                return formState;
             })
             .then((data) => {
                 console.log('/updateBook: ', data);
@@ -72,6 +72,7 @@ export default function SingleBook() {
     function handleDelete() {
         fetch(`http://localhost:2121/books/${id}`, { method: "DELETE" })
             .then(() => alert(`${book.title} Deleted`))
+            .then(goBack())
             .catch(error => console.log(error));
     }
 

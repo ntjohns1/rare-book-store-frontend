@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
 
@@ -82,7 +81,6 @@ export default function AddCustomer() {
             phone: '',
             vip: '',
         });
-
     }
 
     function goBack() {
