@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
 
@@ -28,9 +27,7 @@ export default function AddBook() {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        console.log(formState);
-
-        const url = "http://localhost:8080/books";
+        const url = "http://localhost:2121/books";
         const method = "POST";
         const expectedStatus = 201;
 
@@ -57,6 +54,16 @@ export default function AddBook() {
             .catch((error) => {
                 console.error('Error:', error);
             });
+        setFormState({
+            title: '',
+            author: '',
+            genre: '',
+            yearWritten: '',
+            edition: '',
+            binding: '',
+            bookCondition: '',
+            price: ''
+        })
     }
 
     function goBack() {
