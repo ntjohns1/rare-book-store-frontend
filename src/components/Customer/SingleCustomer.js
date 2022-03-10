@@ -9,13 +9,12 @@ export default function SingleCustomer() {
     const [customer, setCustomer] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:8080/customer/${id}`)
+        fetch(`http://localhost:2122/customers/${id}`)
             .then(response => response.json())
             .then(result =>
                 setCustomer(result))
             .catch(console.log)
-        console.log(customer);
-    }, []);
+    },);
     useEffect(() => {
         setFormState({
             ...customer,
@@ -42,9 +41,7 @@ export default function SingleCustomer() {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        console.log(formState);
-
-        const url = `http://localhost:8080/customers/${id}`;
+        const url = `http://localhost:2122/customers/${id}`;
         const method = "PUT";
 
         const init = {
@@ -84,7 +81,7 @@ export default function SingleCustomer() {
     }
 
     function handleDelete() {
-        fetch(`http://localhost:8080/customers/${id}`, { method: "DELETE" })
+        fetch(`http://localhost:2122/customers/${id}`, { method: "DELETE" })
             .then(() => alert(`${customer.firstName} Deleted`))
             .then(goBack())
             .catch(error => console.log(error));

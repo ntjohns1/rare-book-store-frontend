@@ -21,7 +21,6 @@ export default function AddCustomer() {
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
-        console.log(typeof ({ ...formState.phone }));
 
         setFormState({
             ...formState,
@@ -33,7 +32,7 @@ export default function AddCustomer() {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        const url = "http://localhost:8080/customers";
+        const url = "http://localhost:2122/customers";
         const method = "POST";
 
         const init = {
@@ -62,7 +61,6 @@ export default function AddCustomer() {
 
         fetch(url, init)
             .then(response => {
-                console.log(response.status);
                 return response.json();
             })
             .then((data) => {

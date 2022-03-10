@@ -6,7 +6,7 @@ export default function BookTable() {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8080/books")
+        fetch("http://localhost:2121/books")
             .then(response => response.json())
             .then(result => setBooks(result))
             .catch(console.log);
