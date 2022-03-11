@@ -72,7 +72,7 @@ export default function SingleBook() {
     function handleDelete() {
         fetch(`http://localhost:7979/books/${id}`, { method: "DELETE" })
         .then(() => alert(`${book.title} Deleted`))
-        // .then(goBack())
+        .then(goBack())
         .catch(error => console.log(error));
     }
 

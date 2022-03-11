@@ -83,7 +83,7 @@ export default function SingleCustomer() {
     function handleDelete() {
         fetch(`http://localhost:7979/customers/${id}`, { method: "DELETE" })
             .then(() => alert(`${customer.firstName} Deleted`))
-            // .then(goBack())
+            .then(goBack())
             .catch(error => console.log(error));
     }
 
