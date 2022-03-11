@@ -12,7 +12,7 @@ export default function CustomerList() {
     }, []);
 
     function goToCustomer(customerId) {
-        document.location.replace(`/customer/${customerId}`);
+        document.location.replace(`/customers/${customerId}`);
     }
 
     return (

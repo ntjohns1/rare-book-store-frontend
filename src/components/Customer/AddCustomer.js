@@ -31,7 +31,7 @@ export default function AddCustomer() {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        const url = "http://localhost:2122/customers";
+        const url = "http://localhost:7979/customers";
         const method = "POST";
 
         const init = {

@@ -22,8 +22,8 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/addCustomer" element={<AddCustomer />} />
           <Route path="/addBook" element={<AddBook />} />
-          <Route path="/customer/:customerId" element={<SingleCustomer />} />
-          <Route path="/book/:id" element={<SingleBook />} />
+          <Route path="/customers/:customerId" element={<SingleCustomer />} />
+          <Route path="/books/:id" element={<SingleBook />} />
         </Routes>
       </IdProvider>
     </BrowserRouter>

@@ -32,7 +32,7 @@ export default function AddBook() {
 
         const url = "http://localhost:7979/books";
         const method = "POST";
-        const expectedStatus = 201;
+        const expectedStatus = 200;
 
         const init = {
             method,
