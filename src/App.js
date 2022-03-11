@@ -4,7 +4,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { IdProvider } from './context/IdContext';
 import Homepage from './components/Homepage/Homepage';
 import AddCustomer from './components/Customer/AddCustomer';
 import AddBook from './components/Book/AddBook'
@@ -17,7 +16,6 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <IdProvider>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/addCustomer" element={<AddCustomer />} />
@@ -25,7 +23,6 @@ function App() {
           <Route path="/customers/:customerId" element={<SingleCustomer />} />
           <Route path="/books/:id" element={<SingleBook />} />
         </Routes>
-      </IdProvider>
     </BrowserRouter>
   );
 }

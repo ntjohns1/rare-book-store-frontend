@@ -1,10 +1,4 @@
-import { useIdContext } from "../../context/IdContext";
-
 export default function BookRow({ book }) {
-
-    let { bookId } = useIdContext();
-    if (book.Id > bookId) bookId = book.id;
-    console.log(bookId);
 
     function goToBook(id) {
         document.location.replace(`/books/${id}`);

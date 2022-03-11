@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
-import { useIdContext } from "../../context/IdContext";
 
 
 export default function AddBook() {
 
-    let { bookId } = useIdContext();
     const [formState, setFormState] = useState({
         title: '',
         author: '',
