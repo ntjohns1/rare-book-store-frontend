@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Card, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Sidebar from '../Sidebar';
+import { useIdContext } from "../../context/IdContext";
+
 
 export default function AddBook() {
 
+    let { bookId } = useIdContext();
     const [formState, setFormState] = useState({
         title: '',
         author: '',
@@ -27,9 +30,9 @@ export default function AddBook() {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        const url = "http://localhost:2121/books";
+        const url = "http://localhost:7979/books";
         const method = "POST";
-        const expectedStatus = 201;
+        const expectedStatus = 200;
 
         const init = {
             method,

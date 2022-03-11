@@ -5,14 +5,14 @@ export default function CustomerList() {
     const [customers, setCustomers] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:2122/customers")
+        fetch("http://localhost:7979/customers")
             .then(response => response.json())
             .then(result => setCustomers(result))
             .catch(console.log);
     }, []);
 
     function goToCustomer(customerId) {
-        document.location.replace(`/customer/${customerId}`);
+        document.location.replace(`/customers/${customerId}`);
     }
 
     return (
