@@ -9,7 +9,7 @@ export default function SingleBook() {
     const [book, setBook] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:2121/book/${id}`)
+        fetch(`http://localhost:7979/book/${id}`)
             .then(response => response.json())
             .then(result =>
                 setBook(result))
@@ -44,7 +44,7 @@ export default function SingleBook() {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        const url = `http://localhost:2121/book/${id}`;
+        const url = `http://localhost:7979/book/${id}`;
         const method = "PUT";
 
         const init = {
@@ -70,7 +70,7 @@ export default function SingleBook() {
     }
 
     function handleDelete() {
-        fetch(`http://localhost:2121/books/${id}`, { method: "DELETE" })
+        fetch(`http://localhost:/7979books/${id}`, { method: "DELETE" })
             .then(() => alert(`${book.title} Deleted`))
             .then(goBack())
             .catch(error => console.log(error));
