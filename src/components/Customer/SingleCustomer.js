@@ -231,7 +231,7 @@ export default function SingleCustomer() {
                                             </Col>
                                             <Col md="6">
                                                 <Form.Group>
-                                                    <label>Rewards Level</label>
+                                                    <label>VIP Status</label>
                                                     <Form.Control
                                                         name="vip"
                                                         value={formState.vip ?? ""}
